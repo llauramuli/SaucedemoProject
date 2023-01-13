@@ -6,15 +6,15 @@ import com.saucelabs.pages.LogoutPage;
 import com.saucelabs.utilities.BaseClass;
 import org.testng.annotations.Test;
 
-public class LogoutTest extends BaseClass {
+public class LogoutTests extends BaseClass {
     private LoginPage loginPage = new LoginPage();
     private HomePage homePage = new HomePage();
     private LogoutPage logoutPage = new LogoutPage();
 
     @Test
-    public void LogoutTest(){
+    public void userLogoutTest()  {
         loginPage.LoginValidData();
         homePage.verifyPage();
-        logoutPage.Logout();
+        logoutPage.userLogout();
     }
 }
