@@ -14,7 +14,7 @@ public class LogoutTests extends BaseClass {
     @Test
     public void userLogoutTest()  {
         loginPage.LoginValidData();
-        homePage.verifyPage();
+        homePage.verifyLoginPage();
         logoutPage.userLogout();
     }
 }

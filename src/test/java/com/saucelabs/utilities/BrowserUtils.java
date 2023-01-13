@@ -8,8 +8,8 @@ public class BrowserUtils {
     // Te gjitha metodat qe perdoren me se shpeshti ne te gjithe framework
     // select, actions, frames windowhandles...
 
-    public static void pageVerification(String exp, WebElement elm){
-        Assert.assertEquals(exp, elm.getText());
+    public static void pageVerification(String exp, String url){
+        Assert.assertEquals(exp, url);
     }
     public static void selectByValue(String str, WebElement elm){
         Select select = new Select(elm);

@@ -6,7 +6,6 @@ import com.saucelabs.utilities.ConfigurationReader;
 import com.saucelabs.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage extends BasePage {
 
@@ -29,9 +28,9 @@ public class LoginPage extends BasePage {
     public WebElement errorMessage;
 
 
-    public void verifyPage(){
-        BrowserUtils.pageVerification("Swag Labs", pageTitle);
-    }
+//    public void verifyLoginPage(){
+//        BrowserUtils.pageVerification("https://www.saucedemo.com/", Driver.getDriver().getCurrentUrl());
+//    }
 
     public void LoginValidData (){
         username.sendKeys(ConfigurationReader.getProperty("sauce.username"));
