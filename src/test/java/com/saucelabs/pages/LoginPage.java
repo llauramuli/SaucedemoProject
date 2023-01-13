@@ -9,12 +9,6 @@ import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends BasePage {
 
-    //@FindBy(xpath = "inventory_item")
-    WebElement elements;
-
-    @FindBy(xpath = "//title")
-    private WebElement pageTitle;
-
     @FindBy(id = "user-name")
     private WebElement username;
 

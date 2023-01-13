@@ -1,21 +1,17 @@
 package com.saucelabs.tests;
 
 import com.saucelabs.pages.HomePage;
+import com.saucelabs.pages.LoginPage;
 import com.saucelabs.utilities.BaseClass;
-import com.saucelabs.utilities.Driver;
-import org.openqa.selenium.WebElement;
-import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class HomePageTests extends BaseClass {
+    private LoginPage loginPage = new LoginPage();
+    public HomePage homePage = new HomePage();
 
-    public HomePage homePage;
-
-    public void test(){
-        Assert.assertEquals(homePage.elements.size(), 6, "Number of elements is not 6!");
-
-        for (WebElement elm: homePage.elements) {
-            elm.click();
-            Driver.getDriver().navigate().back();
-        }
+    @Test
+    public void totalNumberOfProductsTest(){
+        loginPage.LoginValidData();
+        homePage.totalNumberOfProducts();
     }
 }

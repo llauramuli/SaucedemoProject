@@ -9,13 +9,18 @@ import org.openqa.selenium.support.FindBy;
 import java.util.List;
 
 public class HomePage extends BasePage {
-
-    @FindBy(xpath = "inventory_item")
+    public HomePage homePage;
+    @FindBy(className = "inventory_item")
     public List<WebElement> elements;
-
-     //@FindBy()
 
     public void verifyHomePage(){
         BrowserUtils.pageVerification("https://www.saucedemo.com/inventory.html", Driver.getDriver().getCurrentUrl());
     }
+
+    public void totalNumberOfProducts(){
+
+        int elementsCount = elements.size();
+        System.out.println("Total Number of Elements : " + elementsCount);
+        }
 }
+
