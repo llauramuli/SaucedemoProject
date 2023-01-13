@@ -1,9 +1,7 @@
 package com.saucelabs.utilities;
 
-import com.saucelabs.pages.LoginPage;
-import com.saucelabs.pages.LogoutPage;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeMethod;
 
 public abstract class BaseClass {
@@ -15,9 +13,9 @@ public abstract class BaseClass {
         driver.get(ConfigurationReader.getProperty("sauce.url"));
     }
 
-    @AfterMethod
+    @AfterClass
     public void tearDown(){
-       Driver.closeDriver();
+        Driver.closeDriver();
     }
 
 }

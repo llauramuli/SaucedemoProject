@@ -1,12 +1,10 @@
 package com.saucelabs.tests;
 
 import com.saucelabs.pages.HomePage;
-import com.saucelabs.pages.LoginPage;
 import com.saucelabs.utilities.BaseClass;
 import com.saucelabs.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.Test;
 
 public class HomePageTests extends BaseClass {
 

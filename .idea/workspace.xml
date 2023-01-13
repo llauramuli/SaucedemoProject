@@ -4,19 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7057bbcf-bdce-4bd2-9456-8b9fff7d15f2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="7057bbcf-bdce-4bd2-9456-8b9fff7d15f2" name="Changes" comment="Waits">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/LogoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/LogoutPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/LogoutTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/LogoutTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/HomePageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/HomePageTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/LoginTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/utilities/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/utilities/BaseClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/utilities/BrowserUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/utilities/BrowserUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/utilities/ConfigurationReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/utilities/ConfigurationReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/utilities/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/utilities/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/utilities/WaitUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/utilities/WaitUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +45,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.LogoutTests.userLogoutTest">
+  <component name="RunManager" selected="TestNG.LoginTests">
     <configuration name="HomePageTests.test" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SaucedemoProject" />
       <extension name="coverage">
@@ -142,8 +137,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LogoutTests.userLogoutTest" />
         <item itemvalue="TestNG.LoginTests" />
+        <item itemvalue="TestNG.LogoutTests.userLogoutTest" />
         <item itemvalue="TestNG.LoginTests.loginValidDataTest" />
         <item itemvalue="TestNG.LoginTests.LoginValidUsernameAndEmptyPasswordTest" />
         <item itemvalue="TestNG.HomePageTests.test" />
@@ -159,6 +154,21 @@
       <option name="presentableId" value="Default" />
       <updated>1671799392437</updated>
     </task>
+    <task id="LOCAL-00001" summary="Waits">
+      <created>1673607021120</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673607021121</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Waits">
+      <created>1673607045968</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673607045968</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -171,5 +181,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Waits" />
+    <option name="LAST_COMMIT_MESSAGE" value="Waits" />
   </component>
 </project>

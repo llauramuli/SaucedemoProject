@@ -3,23 +3,13 @@ package com.saucelabs.tests;
 import com.saucelabs.pages.HomePage;
 import com.saucelabs.pages.LoginPage;
 import com.saucelabs.utilities.BaseClass;
-import com.saucelabs.utilities.ConfigurationReader;
-import com.saucelabs.utilities.Driver;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class LoginTests extends BaseClass {
 
     private LoginPage loginPage = new LoginPage();
     private HomePage homePage = new HomePage();
-
-//    @BeforeMethod
-//    public void setUp(){
-//        driver = Driver.getDriver();
-//        driver.get(ConfigurationReader.getProperty("sauce.url"));
-//    }
 
     @Test
     public void loginValidDataTest(){

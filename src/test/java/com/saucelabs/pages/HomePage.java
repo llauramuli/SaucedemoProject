@@ -1,7 +1,6 @@
 package com.saucelabs.pages;
 
 import com.saucelabs.utilities.BasePage;
-import com.saucelabs.utilities.BrowserUtils;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
