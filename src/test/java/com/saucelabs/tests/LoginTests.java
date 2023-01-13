@@ -13,7 +13,7 @@ public class LoginTests extends BaseClass {
 
     @Test
     public void loginValidDataTest(){
-        homePage.verifyLoginPage();
+        loginPage.verifyLoginPage();
         loginPage.LoginValidData();
         homePage.verifyHomePage();
     }

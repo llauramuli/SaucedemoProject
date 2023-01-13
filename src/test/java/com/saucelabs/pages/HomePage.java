@@ -15,9 +15,6 @@ public class HomePage extends BasePage {
 
      //@FindBy()
 
-    public void verifyLoginPage(){
-        BrowserUtils.pageVerification("https://www.saucedemo.com/", Driver.getDriver().getCurrentUrl());
-    }
     public void verifyHomePage(){
         BrowserUtils.pageVerification("https://www.saucedemo.com/inventory.html", Driver.getDriver().getCurrentUrl());
     }

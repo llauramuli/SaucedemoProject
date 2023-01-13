@@ -27,10 +27,9 @@ public class LoginPage extends BasePage {
     @FindBy(xpath = "//*[contains(text(), 'Epic sadface:')]")
     public WebElement errorMessage;
 
-
-//    public void verifyLoginPage(){
-//        BrowserUtils.pageVerification("https://www.saucedemo.com/", Driver.getDriver().getCurrentUrl());
-//    }
+    public void verifyLoginPage(){
+        BrowserUtils.pageVerification("https://www.saucedemo.com/", Driver.getDriver().getCurrentUrl());
+    }
 
     public void LoginValidData (){
         username.sendKeys(ConfigurationReader.getProperty("sauce.username"));
