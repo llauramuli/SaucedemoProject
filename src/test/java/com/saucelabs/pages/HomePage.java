@@ -11,16 +11,13 @@ import java.util.List;
 public class HomePage extends BasePage {
     public HomePage homePage;
     @FindBy(className = "inventory_item")
-    public List<WebElement> elements;
+    public List<WebElement> totalProducts;
 
-    public void verifyHomePage(){
-        BrowserUtils.pageVerification("https://www.saucedemo.com/inventory.html", Driver.getDriver().getCurrentUrl());
+    public int totalNumberOfProducts() {
+        return totalProducts.size();
     }
 
-    public void totalNumberOfProducts(){
-
-        int elementsCount = elements.size();
-        System.out.println("Total Number of Elements : " + elementsCount);
-        }
+    public void verifyHomePage() {
+        BrowserUtils.pageVerification("https://www.saucedemo.com/inventory.html", Driver.getDriver().getCurrentUrl());
+    }
 }
-
