@@ -13,9 +13,6 @@ public class HomePageTests extends BaseClass {
     @Test
     public void totalNumberOfProductsTest(){
         loginPage.LoginValidData();
-        homePage.totalNumberOfProducts();
-        Assert.assertEquals(homePage.totalProducts.size(), 6, "Number of elements is not 6!");
-
-
+        Assert.assertEquals(homePage.totalNumberOfProducts(), 6, "Number of elements is not 6!");
     }
 }

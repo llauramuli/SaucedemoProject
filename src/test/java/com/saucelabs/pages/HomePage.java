@@ -9,9 +9,9 @@ import org.openqa.selenium.support.FindBy;
 import java.util.List;
 
 public class HomePage extends BasePage {
-    public HomePage homePage;
+
     @FindBy(className = "inventory_item")
-    public List<WebElement> totalProducts;
+    private List<WebElement> totalProducts;
 
     public int totalNumberOfProducts() {
         return totalProducts.size();
