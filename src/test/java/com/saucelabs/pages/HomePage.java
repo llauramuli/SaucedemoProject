@@ -17,12 +17,6 @@ public class HomePage extends BasePage {
     @FindBy(className = "inventory_item_price")
     private List<WebElement> productPrices;
 
-    @FindBy(id = "item_4_title_link")
-    private WebElement productTitle;
-
-    @FindBy(className = "inventory_details_price")
-    private WebElement detailsPrice;
-
     public int totalNumberOfProducts() {
         return totalProducts.size();
     }
@@ -33,10 +27,5 @@ public class HomePage extends BasePage {
 
     public String getProductPrice(){
         return productPrices.get(0).getText();
-    }
-
-    public String getDetailsPrice(){
-        productTitle.click();
-        return detailsPrice.getText();
     }
 }
