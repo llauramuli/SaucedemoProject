@@ -15,4 +15,13 @@ public class HomePageTests extends BaseClass {
         loginPage.LoginValidData();
         Assert.assertEquals(homePage.totalNumberOfProducts(), 6, "Number of elements is not 6!");
     }
+
+    @Test
+    public void verifyProductPriceTest(){
+        loginPage.LoginValidData();
+        Assert.assertEquals(homePage.getProductPrice(), homePage.getDetailsPrice(), "Price is not the same!");
+//        Assert.assertEquals(homePage.getProductPrice(), "$29.99", "Price is not the same!");
+//        Assert.assertEquals(homePage.getDetailsPrice(), "$29.99", "Price is not the same!");
+    }
+
 }
