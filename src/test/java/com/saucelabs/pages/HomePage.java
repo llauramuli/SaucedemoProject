@@ -3,7 +3,6 @@ package com.saucelabs.pages;
 import com.saucelabs.utilities.BasePage;
 import com.saucelabs.utilities.BrowserUtils;
 import com.saucelabs.utilities.Driver;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -26,6 +25,6 @@ public class HomePage extends BasePage {
     }
 
     public String getProductPrice(){
-        return productPrices.get(0).getText();
+        return productPrices.get(1).getText();
     }
 }

@@ -1,4 +1,4 @@
-package com.saucelabs.pages;
+package com.saucelabs.pages.productDetailsPages;
 
 import com.saucelabs.utilities.BasePage;
 import org.openqa.selenium.WebElement;
