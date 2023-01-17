@@ -11,14 +11,17 @@ import java.util.List;
 public class HomePage extends BasePage {
 
     @FindBy(className = "inventory_item")
-    private List<WebElement> totalProducts;
+    private List<WebElement> productList;
 
     @FindBy(className = "inventory_item_price")
     private List<WebElement> productPrices;
 
     public int totalNumberOfProducts() {
-        return totalProducts.size();
+        return productList.size();
     }
+
+    @FindBy(className = "product_sort_container")
+    private WebElement productSortContainer;
 
     public void verifyHomePage() {
         BrowserUtils.pageVerification("https://www.saucedemo.com/inventory.html", Driver.getDriver().getCurrentUrl());
@@ -27,4 +30,29 @@ public class HomePage extends BasePage {
     public String getProductPrice(){
         return productPrices.get(1).getText();
     }
+
+    public List<WebElement> getProductList() {
+        return productList;
+    }
+
+    public List<WebElement> sortProductNamesZToA() {
+        BrowserUtils.selectByValue("za", productSortContainer);
+        return productList;
+    }
+
+    public List<WebElement> sortProductNamesAToZ() {
+        BrowserUtils.selectByValue("az", productSortContainer);
+        return productList;
+    }
+
+    public List<WebElement> sortProductPriceLowToHigh() {
+        BrowserUtils.selectByValue("lohi", productSortContainer);
+        return productList;
+    }
+
+    public List<WebElement> sortProductPriceHighToLow() {
+        BrowserUtils.selectByValue("hilo", productSortContainer);
+        return productList;
+    }
+
 }

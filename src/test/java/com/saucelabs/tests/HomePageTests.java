@@ -5,15 +5,20 @@ import com.saucelabs.pages.LoginPage;
 import com.saucelabs.pages.productDetailsPages.SauceLabsBackpackPage;
 import com.saucelabs.pages.productDetailsPages.SauceLabsBikeLightPage;
 import com.saucelabs.utilities.BaseClass;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 
 public class HomePageTests extends BaseClass {
     private LoginPage loginPage = new LoginPage();
     public HomePage homePage = new HomePage();
 
     public SauceLabsBackpackPage sauceLabsBackpackPage = new SauceLabsBackpackPage();
-
     public SauceLabsBikeLightPage sauceLabsBikeLightPage = new SauceLabsBikeLightPage();
 
     @Test
@@ -30,4 +35,84 @@ public class HomePageTests extends BaseClass {
 //        Assert.assertEquals(homePage.getDetailsPrice(), "$29.99", "Price is not the same!");
     }
 
+
+    @Test
+    public void sortProductNamesZToA() throws InterruptedException {
+        loginPage.LoginValidData();
+        Thread.sleep(3000);
+        // Since product list is *pass-by-reference* we need to create a copy of that list and paste it into a new list called original product list
+        List<WebElement> originalProductList = new ArrayList<>(homePage.getProductList());
+        List<WebElement> sortedList = homePage.sortProductNamesZToA();
+        List<String> sortedOriginalProductTitleList = originalProductList.stream().map(originalProduct -> originalProduct.findElements(By.className("inventory_item_name")).get(0).getText()).sorted(Comparator.reverseOrder()).toList();
+        List<String> sortedProductTitleList =sortedList.stream().map(originalProduct -> originalProduct.findElements(By.className("inventory_item_name")).get(0).getText()).toList();
+
+        Assert.assertEquals(sortedProductTitleList, sortedOriginalProductTitleList, "Product Names not sorting correctly!");
+        Thread.sleep(3000);
+    }
+
+    @Test
+    public void sortProductNamesAToZ() throws InterruptedException {
+        loginPage.LoginValidData();
+        Thread.sleep(3000);
+        // Since product list is *pass-by-reference* we need to create a copy of that list and paste it into a new list called original product list
+        List<WebElement> originalProductList = new ArrayList<>(homePage.getProductList());
+        List<WebElement> sortedList = homePage.sortProductNamesAToZ();
+        List<String> sortedOriginalProductTitleList = originalProductList.stream().map(originalProduct -> originalProduct.findElements(By.className("inventory_item_name")).get(0).getText()).sorted().toList();
+        List<String> sortedProductTitleList =sortedList.stream().map(originalProduct -> originalProduct.findElements(By.className("inventory_item_name")).get(0).getText()).toList();
+
+        Assert.assertEquals(sortedProductTitleList, sortedOriginalProductTitleList, "Product Names not sorting correctly!");
+        Thread.sleep(3000);
+    }
+
+    @Test
+    public void sortProductPriceLowToHigh() throws InterruptedException {
+        loginPage.LoginValidData();
+        Thread.sleep(3000);
+        // Since product list is *pass-by-reference* we need to create a copy of that list and paste it into a new list called original product list
+        List<WebElement> originalProductList = new ArrayList<>(homePage.getProductList());
+        List<WebElement> sortedList = homePage.sortProductPriceLowToHigh();
+        List<Double> sortedOriginalProductTitleList = originalProductList
+                .stream()
+                .map(originalProduct -> originalProduct.findElements(By.className("inventory_item_price")).get(0).getText())
+                .map(price -> price.substring(1))
+                .map(Double::valueOf)
+                .sorted()
+                .toList();
+
+        List<Double> sortedProductTitleList = sortedList
+                .stream()
+                .map(originalProduct -> originalProduct.findElements(By.className("inventory_item_price")).get(0).getText())
+                .map(price -> price.substring(1))
+                .map(Double::valueOf)
+                .toList();
+
+        Assert.assertEquals(sortedProductTitleList, sortedOriginalProductTitleList, "Product Price not sorting correctly!");
+        Thread.sleep(3000);
+    }
+
+    @Test
+    public void sortProductPriceHighToLow() throws InterruptedException {
+        loginPage.LoginValidData();
+        Thread.sleep(3000);
+        // Since product list is *pass-by-reference* we need to create a copy of that list and paste it into a new list called original product list
+        List<WebElement> originalProductList = new ArrayList<>(homePage.getProductList());
+        List<WebElement> sortedList = homePage.sortProductPriceHighToLow();
+        List<Double> sortedOriginalProductTitleList = originalProductList
+                .stream()
+                .map(originalProduct -> originalProduct.findElements(By.className("inventory_item_price")).get(0).getText())
+                .map(price -> price.substring(1))
+                .map(Double::valueOf)
+                .sorted(Comparator.reverseOrder())
+                .toList();
+
+        List<Double> sortedProductTitleList = sortedList
+                .stream()
+                .map(originalProduct -> originalProduct.findElements(By.className("inventory_item_price")).get(0).getText())
+                .map(price -> price.substring(1))
+                .map(Double::valueOf)
+                .toList();
+
+        Assert.assertEquals(sortedProductTitleList, sortedOriginalProductTitleList, "Product Price not sorting correctly!");
+        Thread.sleep(3000);
+    }
 }

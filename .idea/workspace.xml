@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7057bbcf-bdce-4bd2-9456-8b9fff7d15f2" name="Changes" comment="Verify Product Price">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/productDetailsPages/SauceLabsBikeLightPage.java" afterDir="false" />
+    <list default="true" id="7057bbcf-bdce-4bd2-9456-8b9fff7d15f2" name="Changes" comment="Product pages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/SauceLabsBackpackPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/productDetailsPages/SauceLabsBackpackPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/HomePageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/HomePageTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,8 +41,8 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.HomePageTests.verifyProductPriceTest">
-    <configuration name="HomePageTests.totalNumberOfProductsTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.HomePageTests.sortProductPriceHighToLow">
+    <configuration name="HomePageTests.select" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SaucedemoProject" />
       <extension name="coverage">
         <pattern>
@@ -54,7 +52,61 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.saucelabs.tests" />
       <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.HomePageTests" />
-      <option name="METHOD_NAME" value="totalNumberOfProductsTest" />
+      <option name="METHOD_NAME" value="select" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomePageTests.sortProductNamesAToZ" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SaucedemoProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.saucelabs.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.saucelabs.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.HomePageTests" />
+      <option name="METHOD_NAME" value="sortProductNamesAToZ" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomePageTests.sortProductPriceHighToLow" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SaucedemoProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.saucelabs.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.saucelabs.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.HomePageTests" />
+      <option name="METHOD_NAME" value="sortProductPriceHighToLow" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomePageTests.sortProductPriceLowToHigh" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SaucedemoProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.saucelabs.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.saucelabs.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.HomePageTests" />
+      <option name="METHOD_NAME" value="sortProductPriceLowToHigh" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -80,65 +132,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SaucedemoProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.saucelabs.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.saucelabs.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.LoginTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTests.loginValidDataTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SaucedemoProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.saucelabs.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.saucelabs.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.LoginTests" />
-      <option name="METHOD_NAME" value="loginValidDataTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LogoutTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SaucedemoProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.saucelabs.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.saucelabs.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.LogoutTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.HomePageTests.sortProductPriceHighToLow" />
+        <item itemvalue="TestNG.HomePageTests.sortProductPriceLowToHigh" />
+        <item itemvalue="TestNG.HomePageTests.sortProductNamesAToZ" />
+        <item itemvalue="TestNG.HomePageTests.select" />
         <item itemvalue="TestNG.HomePageTests.verifyProductPriceTest" />
-        <item itemvalue="TestNG.HomePageTests.totalNumberOfProductsTest" />
-        <item itemvalue="TestNG.LoginTests" />
-        <item itemvalue="TestNG.LoginTests.loginValidDataTest" />
-        <item itemvalue="TestNG.LogoutTests" />
       </list>
     </recent_temporary>
   </component>
@@ -221,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673876464024</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Product pages">
+      <created>1673877597152</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1673877597152</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -241,7 +248,8 @@
     <MESSAGE value="Getting url of the current page" />
     <MESSAGE value="Total number of the products" />
     <MESSAGE value="Verify Product Price" />
-    <option name="LAST_COMMIT_MESSAGE" value="Verify Product Price" />
+    <MESSAGE value="Product pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Product pages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
