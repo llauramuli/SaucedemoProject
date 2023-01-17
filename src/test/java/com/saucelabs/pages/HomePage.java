@@ -3,6 +3,8 @@ package com.saucelabs.pages;
 import com.saucelabs.utilities.BasePage;
 import com.saucelabs.utilities.BrowserUtils;
 import com.saucelabs.utilities.Driver;
+import com.saucelabs.utilities.WaitUtils;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -36,21 +38,25 @@ public class HomePage extends BasePage {
     }
 
     public List<WebElement> sortProductNamesZToA() {
+        WaitUtils.waitUntilElmIsVisible(By.className("active_option"));
         BrowserUtils.selectByValue("za", productSortContainer);
         return productList;
     }
 
     public List<WebElement> sortProductNamesAToZ() {
+        WaitUtils.waitUntilElmIsVisible(By.className("active_option"));
         BrowserUtils.selectByValue("az", productSortContainer);
         return productList;
     }
 
     public List<WebElement> sortProductPriceLowToHigh() {
+        WaitUtils.waitUntilElmIsVisible(By.className("active_option"));
         BrowserUtils.selectByValue("lohi", productSortContainer);
         return productList;
     }
 
     public List<WebElement> sortProductPriceHighToLow() {
+        WaitUtils.waitUntilElmIsVisible(By.className("active_option"));
         BrowserUtils.selectByValue("hilo", productSortContainer);
         return productList;
     }

@@ -37,9 +37,8 @@ public class HomePageTests extends BaseClass {
 
 
     @Test
-    public void sortProductNamesZToA() throws InterruptedException {
+    public void sortProductNamesZToA() {
         loginPage.LoginValidData();
-        Thread.sleep(3000);
         // Since product list is *pass-by-reference* we need to create a copy of that list and paste it into a new list called original product list
         List<WebElement> originalProductList = new ArrayList<>(homePage.getProductList());
         List<WebElement> sortedList = homePage.sortProductNamesZToA();
@@ -47,13 +46,11 @@ public class HomePageTests extends BaseClass {
         List<String> sortedProductTitleList =sortedList.stream().map(originalProduct -> originalProduct.findElements(By.className("inventory_item_name")).get(0).getText()).toList();
 
         Assert.assertEquals(sortedProductTitleList, sortedOriginalProductTitleList, "Product Names not sorting correctly!");
-        Thread.sleep(3000);
     }
 
     @Test
-    public void sortProductNamesAToZ() throws InterruptedException {
+    public void sortProductNamesAToZ() {
         loginPage.LoginValidData();
-        Thread.sleep(3000);
         // Since product list is *pass-by-reference* we need to create a copy of that list and paste it into a new list called original product list
         List<WebElement> originalProductList = new ArrayList<>(homePage.getProductList());
         List<WebElement> sortedList = homePage.sortProductNamesAToZ();
@@ -61,13 +58,11 @@ public class HomePageTests extends BaseClass {
         List<String> sortedProductTitleList =sortedList.stream().map(originalProduct -> originalProduct.findElements(By.className("inventory_item_name")).get(0).getText()).toList();
 
         Assert.assertEquals(sortedProductTitleList, sortedOriginalProductTitleList, "Product Names not sorting correctly!");
-        Thread.sleep(3000);
     }
 
     @Test
-    public void sortProductPriceLowToHigh() throws InterruptedException {
+    public void sortProductPriceLowToHigh() {
         loginPage.LoginValidData();
-        Thread.sleep(3000);
         // Since product list is *pass-by-reference* we need to create a copy of that list and paste it into a new list called original product list
         List<WebElement> originalProductList = new ArrayList<>(homePage.getProductList());
         List<WebElement> sortedList = homePage.sortProductPriceLowToHigh();
@@ -87,13 +82,11 @@ public class HomePageTests extends BaseClass {
                 .toList();
 
         Assert.assertEquals(sortedProductTitleList, sortedOriginalProductTitleList, "Product Price not sorting correctly!");
-        Thread.sleep(3000);
     }
 
     @Test
-    public void sortProductPriceHighToLow() throws InterruptedException {
+    public void sortProductPriceHighToLow() {
         loginPage.LoginValidData();
-        Thread.sleep(3000);
         // Since product list is *pass-by-reference* we need to create a copy of that list and paste it into a new list called original product list
         List<WebElement> originalProductList = new ArrayList<>(homePage.getProductList());
         List<WebElement> sortedList = homePage.sortProductPriceHighToLow();
@@ -113,6 +106,5 @@ public class HomePageTests extends BaseClass {
                 .toList();
 
         Assert.assertEquals(sortedProductTitleList, sortedOriginalProductTitleList, "Product Price not sorting correctly!");
-        Thread.sleep(3000);
     }
 }

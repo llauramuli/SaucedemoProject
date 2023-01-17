@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7057bbcf-bdce-4bd2-9456-8b9fff7d15f2" name="Changes" comment="Product pages">
+    <list default="true" id="7057bbcf-bdce-4bd2-9456-8b9fff7d15f2" name="Changes" comment="Sorting">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/HomePageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/HomePageTests.java" afterDir="false" />
@@ -41,8 +41,8 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.HomePageTests.sortProductPriceHighToLow">
-    <configuration name="HomePageTests.select" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.HomePageTests">
+    <configuration name="HomePageTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SaucedemoProject" />
       <extension name="coverage">
         <pattern>
@@ -52,8 +52,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.saucelabs.tests" />
       <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.HomePageTests" />
-      <option name="METHOD_NAME" value="select" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -71,6 +70,24 @@
       <option name="PACKAGE_NAME" value="com.saucelabs.tests" />
       <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.HomePageTests" />
       <option name="METHOD_NAME" value="sortProductNamesAToZ" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomePageTests.sortProductNamesZToA" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SaucedemoProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.saucelabs.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.saucelabs.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.HomePageTests" />
+      <option name="METHOD_NAME" value="sortProductNamesZToA" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -114,31 +131,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomePageTests.verifyProductPriceTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SaucedemoProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.saucelabs.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.saucelabs.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.HomePageTests" />
-      <option name="METHOD_NAME" value="verifyProductPriceTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.HomePageTests.sortProductPriceHighToLow" />
+        <item itemvalue="TestNG.HomePageTests" />
         <item itemvalue="TestNG.HomePageTests.sortProductPriceLowToHigh" />
+        <item itemvalue="TestNG.HomePageTests.sortProductNamesZToA" />
+        <item itemvalue="TestNG.HomePageTests.sortProductPriceHighToLow" />
         <item itemvalue="TestNG.HomePageTests.sortProductNamesAToZ" />
-        <item itemvalue="TestNG.HomePageTests.select" />
-        <item itemvalue="TestNG.HomePageTests.verifyProductPriceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -228,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673877597152</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Sorting">
+      <created>1673954083661</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1673954083662</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -249,7 +255,8 @@
     <MESSAGE value="Total number of the products" />
     <MESSAGE value="Verify Product Price" />
     <MESSAGE value="Product pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Product pages" />
+    <MESSAGE value="Sorting" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sorting" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
