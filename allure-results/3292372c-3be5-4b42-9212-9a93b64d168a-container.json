@@ -1,0 +1,1 @@
+{"uuid":"3292372c-3be5-4b42-9212-9a93b64d168a","name":"com.saucelabs.tests.LogoutTests","children":["5b986c1a-2c7b-4436-a64b-0a6f6d5887b0"],"befores":[],"afters":[{"name":"tearDown","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1673979157723,"stop":1673979157892}],"start":1673979141676,"stop":1673979157896}
