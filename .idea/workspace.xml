@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7057bbcf-bdce-4bd2-9456-8b9fff7d15f2" name="Changes" comment="Sorting/Updated waits">
+    <list default="true" id="7057bbcf-bdce-4bd2-9456-8b9fff7d15f2" name="Changes" comment="Sorting/Updated waits&#10;Added a thread sleep for demo purposes">
+      <change afterPath="$PROJECT_DIR$/src/main/testruns/alltests.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/HomePageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/HomePageTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,24 +42,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.HomePageTests.sortProductNamesZToA">
-    <configuration name="HomePageTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SaucedemoProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.saucelabs.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.saucelabs.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.HomePageTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG./Users/macbook/Downloads/SaucedemoProject/src/main/testruns/alltests.xml">
     <configuration name="HomePageTests.sortProductNamesAToZ" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SaucedemoProject" />
       <extension name="coverage">
@@ -76,7 +61,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomePageTests.sortProductNamesZToA" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SaucedemoProject" />
       <extension name="coverage">
         <pattern>
@@ -85,8 +70,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.saucelabs.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.HomePageTests" />
-      <option name="METHOD_NAME" value="sortProductNamesZToA" />
+      <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.LoginTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTests.LoginEmptyUsernameAndPasswordTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SaucedemoProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.saucelabs.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.saucelabs.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.LoginTests" />
+      <option name="METHOD_NAME" value="LoginEmptyUsernameAndPasswordTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -94,7 +96,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomePageTests.sortProductPriceHighToLow" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTests.loginValidDataTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SaucedemoProject" />
       <extension name="coverage">
         <pattern>
@@ -103,8 +105,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.saucelabs.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.HomePageTests" />
-      <option name="METHOD_NAME" value="sortProductPriceHighToLow" />
+      <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.LoginTests" />
+      <option name="METHOD_NAME" value="loginValidDataTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -112,18 +114,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomePageTests.sortProductPriceLowToHigh" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="/Users/macbook/Downloads/SaucedemoProject/src/main/testruns/alltests.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SaucedemoProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.saucelabs.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.saucelabs.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.HomePageTests" />
-      <option name="METHOD_NAME" value="sortProductPriceLowToHigh" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/main/testruns/alltests.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
@@ -132,11 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.HomePageTests.sortProductNamesZToA" />
-        <item itemvalue="TestNG.HomePageTests" />
-        <item itemvalue="TestNG.HomePageTests.sortProductPriceLowToHigh" />
-        <item itemvalue="TestNG.HomePageTests.sortProductPriceHighToLow" />
+        <item itemvalue="TestNG./Users/macbook/Downloads/SaucedemoProject/src/main/testruns/alltests.xml" />
         <item itemvalue="TestNG.HomePageTests.sortProductNamesAToZ" />
+        <item itemvalue="TestNG.LoginTests.LoginEmptyUsernameAndPasswordTest" />
+        <item itemvalue="TestNG.LoginTests.loginValidDataTest" />
+        <item itemvalue="TestNG.LoginTests" />
       </list>
     </recent_temporary>
   </component>
@@ -240,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673956463017</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Sorting/Updated waits&#10;Added a thread sleep for demo purposes">
+      <created>1673957844318</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1673957844318</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -248,7 +249,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -263,7 +276,8 @@
     <MESSAGE value="Product pages" />
     <MESSAGE value="Sorting" />
     <MESSAGE value="Sorting/Updated waits" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sorting/Updated waits" />
+    <MESSAGE value="Sorting/Updated waits&#10;Added a thread sleep for demo purposes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sorting/Updated waits&#10;Added a thread sleep for demo purposes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -275,5 +289,8 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SaucedemoProject$_Users_macbook_Downloads_SaucedemoProject_src_main_testruns_alltests_xml.ic" NAME="$PROJECT_DIR$/src/main/testruns/alltests.xml Coverage Results" MODIFIED="1673980303124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

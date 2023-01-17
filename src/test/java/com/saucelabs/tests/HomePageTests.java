@@ -20,7 +20,6 @@ public class HomePageTests extends BaseClass {
 
     public SauceLabsBackpackPage sauceLabsBackpackPage = new SauceLabsBackpackPage();
     public SauceLabsBikeLightPage sauceLabsBikeLightPage = new SauceLabsBikeLightPage();
-
     @Test
     public void totalNumberOfProductsTest(){
         loginPage.LoginValidData();
@@ -34,8 +33,6 @@ public class HomePageTests extends BaseClass {
 //       Assert.assertEquals(homePage.getProductPrice(), "$29.99", "Price is not the same!");
 //        Assert.assertEquals(homePage.getDetailsPrice(), "$29.99", "Price is not the same!");
     }
-
-
     @Test
     public void sortProductNamesZToA() throws InterruptedException {
         loginPage.LoginValidData();
@@ -50,7 +47,6 @@ public class HomePageTests extends BaseClass {
         Assert.assertEquals(sortedProductTitleList, sortedOriginalProductTitleList, "Product Names not sorting correctly!");
         Thread.sleep(3000);
     }
-
     @Test
     public void sortProductNamesAToZ() {
         loginPage.LoginValidData();
@@ -62,7 +58,6 @@ public class HomePageTests extends BaseClass {
 
         Assert.assertEquals(sortedProductTitleList, sortedOriginalProductTitleList, "Product Names not sorting correctly!");
     }
-
     @Test
     public void sortProductPriceLowToHigh() {
         loginPage.LoginValidData();
@@ -86,7 +81,6 @@ public class HomePageTests extends BaseClass {
 
         Assert.assertEquals(sortedProductTitleList, sortedOriginalProductTitleList, "Product Price not sorting correctly!");
     }
-
     @Test
     public void sortProductPriceHighToLow() {
         loginPage.LoginValidData();
