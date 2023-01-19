@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7057bbcf-bdce-4bd2-9456-8b9fff7d15f2" name="Changes" comment="Sorting/Updated waits&#10;Added a thread sleep for demo purposes">
-      <change afterPath="$PROJECT_DIR$/src/main/testruns/alltests.xml" afterDir="false" />
+    <list default="true" id="7057bbcf-bdce-4bd2-9456-8b9fff7d15f2" name="Changes" comment="Allure installation">
+      <change afterPath="$PROJECT_DIR$/alltests.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/HomePageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/HomePageTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/testruns/alltests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/LogoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/LogoutPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/LogoutTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/LogoutTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/utilities/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/utilities/BaseClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,26 +44,33 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG./Users/macbook/Downloads/SaucedemoProject/src/main/testruns/alltests.xml">
-    <configuration name="HomePageTests.sortProductNamesAToZ" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG./Users/macbook/Downloads/SaucedemoProject/alltests.xml">
+    <configuration name="HopePageTests.sortProductNamesAToZ" type="TestNG" temporary="true">
       <module name="SaucedemoProject" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.saucelabs.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.saucelabs.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.HomePageTests" />
-      <option name="METHOD_NAME" value="sortProductNamesAToZ" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/alltests.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTests" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTests" type="TestNG" temporary="true">
       <module name="SaucedemoProject" />
       <extension name="coverage">
         <pattern>
@@ -78,7 +87,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTests.LoginEmptyUsernameAndPasswordTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LogoutTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SaucedemoProject" />
       <extension name="coverage">
         <pattern>
@@ -87,49 +96,64 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.saucelabs.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.LoginTests" />
-      <option name="METHOD_NAME" value="LoginEmptyUsernameAndPasswordTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.LogoutTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTests.loginValidDataTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="/Users/macbook/Downloads/SaucedemoProject/alltests.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SaucedemoProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.saucelabs.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.saucelabs.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.LoginTests" />
-      <option name="METHOD_NAME" value="loginValidDataTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="/Users/macbook/Downloads/SaucedemoProject/src/main/testruns/alltests.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SaucedemoProject" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/main/testruns/alltests.xml" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/alltests.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="/Users/macbook/Downloads/SaucedemoProject/alltests.xml" type="TestNG" temporary="true">
+      <module name="SaucedemoProject" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/alltests.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="TestNG./Users/macbook/Downloads/SaucedemoProject/alltests.xml" />
+      <item itemvalue="TestNG.HopePageTests.sortProductNamesAToZ" />
+      <item itemvalue="TestNG.LoginTests" />
+      <item itemvalue="TestNG.LogoutTests" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG./Users/macbook/Downloads/SaucedemoProject/src/main/testruns/alltests.xml" />
-        <item itemvalue="TestNG.HomePageTests.sortProductNamesAToZ" />
-        <item itemvalue="TestNG.LoginTests.LoginEmptyUsernameAndPasswordTest" />
-        <item itemvalue="TestNG.LoginTests.loginValidDataTest" />
+        <item itemvalue="TestNG./Users/macbook/Downloads/SaucedemoProject/alltests.xml" />
+        <item itemvalue="TestNG.HopePageTests.sortProductNamesAToZ" />
+        <item itemvalue="TestNG./Users/macbook/Downloads/SaucedemoProject/alltests.xml" />
+        <item itemvalue="TestNG.LogoutTests" />
         <item itemvalue="TestNG.LoginTests" />
       </list>
     </recent_temporary>
@@ -241,7 +265,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673957844318</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Allure installation">
+      <created>1673983162152</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1673983162152</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Allure installation">
+      <created>1673983178428</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1673983178428</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -277,7 +315,8 @@
     <MESSAGE value="Sorting" />
     <MESSAGE value="Sorting/Updated waits" />
     <MESSAGE value="Sorting/Updated waits&#10;Added a thread sleep for demo purposes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sorting/Updated waits&#10;Added a thread sleep for demo purposes" />
+    <MESSAGE value="Allure installation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Allure installation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

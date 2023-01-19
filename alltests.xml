@@ -2,8 +2,8 @@
 <suite name = "System Suite" verbose="1">
     <test name = "System Tests" >
         <classes>
-            <class name="com.saucelabs.tests.HomePageTests" />
-            <class name="com.saucelabs.tests.LoginTests" />
+            <class name="com.saucelabs.tests.LoginTests"/>
+            <class name="com.saucelabs.tests.HomePageTests"/>
             <class name="com.saucelabs.tests.LogoutTests" />
         </classes>
     </test>

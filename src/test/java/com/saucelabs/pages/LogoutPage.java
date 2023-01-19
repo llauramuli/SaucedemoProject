@@ -2,7 +2,6 @@ package com.saucelabs.pages;
 
 import com.saucelabs.utilities.BasePage;
 import com.saucelabs.utilities.WaitUtils;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -16,8 +15,7 @@ public class LogoutPage extends BasePage {
 
     public void userLogout() {
             burgerMenu.click();
-            WaitUtils.waitUntilElmIsVisible(By.id("react-burger-menu-btn"));
+            WaitUtils.waitUntilElmIsClickable(burgerMenu);
             logout.click();
-
         }
 }
