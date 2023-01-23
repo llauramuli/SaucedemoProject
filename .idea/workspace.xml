@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7057bbcf-bdce-4bd2-9456-8b9fff7d15f2" name="Changes" comment="Allure installation">
-      <change afterPath="$PROJECT_DIR$/alltests.xml" afterDir="false" />
+    <list default="true" id="7057bbcf-bdce-4bd2-9456-8b9fff7d15f2" name="Changes" comment="Report">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/TestStatusListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/utilities/TestStatusListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/testruns/alltests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alltests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/alltests.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/LogoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/LogoutPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/HomePageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/HomePageTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/LoginTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/LogoutTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/LogoutTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/utilities/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/utilities/BaseClass.java" afterDir="false" />
     </list>
@@ -44,7 +47,30 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.saucelabs.tests" />
+    </key>
+  </component>
   <component name="RunManager" selected="TestNG./Users/macbook/Downloads/SaucedemoProject/alltests.xml">
+    <configuration name="HomePageTests.sortProductPriceLowToHigh" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SaucedemoProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.saucelabs.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.saucelabs.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.HomePageTests" />
+      <option name="METHOD_NAME" value="sortProductPriceLowToHigh" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HopePageTests.sortProductNamesAToZ" type="TestNG" temporary="true">
       <module name="SaucedemoProject" />
       <shortenClasspath name="NONE" />
@@ -143,6 +169,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="TestNG.HomePageTests.sortProductPriceLowToHigh" />
       <item itemvalue="TestNG./Users/macbook/Downloads/SaucedemoProject/alltests.xml" />
       <item itemvalue="TestNG.HopePageTests.sortProductNamesAToZ" />
       <item itemvalue="TestNG.LoginTests" />
@@ -151,10 +178,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG./Users/macbook/Downloads/SaucedemoProject/alltests.xml" />
+        <item itemvalue="TestNG.HomePageTests.sortProductPriceLowToHigh" />
         <item itemvalue="TestNG.HopePageTests.sortProductNamesAToZ" />
         <item itemvalue="TestNG./Users/macbook/Downloads/SaucedemoProject/alltests.xml" />
         <item itemvalue="TestNG.LogoutTests" />
-        <item itemvalue="TestNG.LoginTests" />
       </list>
     </recent_temporary>
   </component>
@@ -279,8 +306,26 @@
       <option name="project" value="LOCAL" />
       <updated>1673983178428</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Report">
+      <created>1674149304350</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1674149304350</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -316,14 +361,15 @@
     <MESSAGE value="Sorting/Updated waits" />
     <MESSAGE value="Sorting/Updated waits&#10;Added a thread sleep for demo purposes" />
     <MESSAGE value="Allure installation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Allure installation" />
+    <MESSAGE value="Report" />
+    <option name="LAST_COMMIT_MESSAGE" value="Report" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/saucelabs/tests/LoginTests.java</url>
-          <line>8</line>
+          <line>10</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

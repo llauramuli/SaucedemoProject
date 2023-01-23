@@ -4,8 +4,10 @@ import com.saucelabs.pages.HomePage;
 import com.saucelabs.pages.LoginPage;
 import com.saucelabs.utilities.BaseClass;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+@Listeners(com.saucelabs.tests.TestStatusListener.class)
 public class LoginTests extends BaseClass {
 
     private LoginPage loginPage = new LoginPage();
