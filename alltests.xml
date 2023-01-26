@@ -1,8 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name = "System Suite" verbose="1">
-<listeners>
-    <listener class-name="com.saucelabs.tests.TestStatusListener"></listener>
-</listeners>
     <test name = "System Tests" >
         <classes>
             <class name="com.saucelabs.tests.LoginTests"/>

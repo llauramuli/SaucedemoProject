@@ -15,7 +15,7 @@ public class LogoutPage extends BasePage {
 
     public void userLogout() {
             burgerMenu.click();
-//            WaitUtils.waitUntilElmIsClickable(burgerMenu);
+            WaitUtils.waitUntilElmIsClickable(burgerMenu);
             logout.click();
         }
 }

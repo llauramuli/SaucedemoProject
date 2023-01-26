@@ -4,16 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7057bbcf-bdce-4bd2-9456-8b9fff7d15f2" name="Changes" comment="Report">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/TestStatusListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/utilities/TestStatusListener.java" afterDir="false" />
+    <list default="true" id="7057bbcf-bdce-4bd2-9456-8b9fff7d15f2" name="Changes" comment="Screenshot">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/alltests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/alltests.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/LogoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/LogoutPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/HomePageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/HomePageTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/LoginTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/LogoutTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/LogoutTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/TestStatusListener.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/utilities/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/utilities/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/utilities/TestStatusListener.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -313,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674149304350</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Screenshot">
+      <created>1674480161496</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1674480161496</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -362,14 +369,15 @@
     <MESSAGE value="Sorting/Updated waits&#10;Added a thread sleep for demo purposes" />
     <MESSAGE value="Allure installation" />
     <MESSAGE value="Report" />
-    <option name="LAST_COMMIT_MESSAGE" value="Report" />
+    <MESSAGE value="Screenshot" />
+    <option name="LAST_COMMIT_MESSAGE" value="Screenshot" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/saucelabs/tests/LoginTests.java</url>
-          <line>10</line>
+          <line>8</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

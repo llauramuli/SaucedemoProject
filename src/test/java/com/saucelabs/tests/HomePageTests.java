@@ -8,14 +8,12 @@ import com.saucelabs.utilities.BaseClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-@Listeners(com.saucelabs.tests.TestStatusListener.class)
 public class HomePageTests extends BaseClass {
     private LoginPage loginPage = new LoginPage();
     public HomePage homePage = new HomePage();
