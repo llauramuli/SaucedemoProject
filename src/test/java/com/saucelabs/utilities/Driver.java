@@ -3,6 +3,9 @@ package com.saucelabs.utilities;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.safari.SafariDriver;
 
 public class Driver {
     private Driver (){ }
@@ -20,11 +23,24 @@ public class Driver {
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
                     break;
+                case "firefox":
+                    WebDriverManager.firefoxdriver().setup();
+                    driver = new FirefoxDriver();
+                    break;
+                case "safari":
+                    WebDriverManager.safaridriver().setup();
+                    driver = new SafariDriver();
+                    break;
+                case "edge":
+                    WebDriverManager.edgedriver().setup();
+                    driver = new EdgeDriver();
+                    break;
+               //nese te properties kemi paste emrin e browser gabim na mer default Chrome
                 default:
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
                     break;
-            } //other cases -> Firefox, Safari, InternetExplorer
+            }
             driver.manage().window().maximize();
         }
         return driver;

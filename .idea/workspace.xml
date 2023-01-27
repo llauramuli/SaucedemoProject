@@ -5,15 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7057bbcf-bdce-4bd2-9456-8b9fff7d15f2" name="Changes" comment="Screenshot">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/checkoutPages/CartPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/checkoutPages/CheckoutCompletePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/checkoutPages/CheckoutInformationPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/checkoutPages/CheckoutOverviewPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/CheckoutCompleteTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/CheckoutOverviewTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alltests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/alltests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/LogoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/LogoutPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/HomePageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/HomePageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/LoginTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/LogoutTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/LogoutTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/TestStatusListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/utilities/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/utilities/BaseClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/utilities/TestStatusListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/utilities/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/utilities/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/utilities/WaitUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/utilities/WaitUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +32,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -52,8 +56,61 @@
       <recent name="com.saucelabs.tests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG./Users/macbook/Downloads/SaucedemoProject/alltests.xml">
-    <configuration name="HomePageTests.sortProductPriceLowToHigh" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.CheckoutOverviewTests.orderProcessTest">
+    <configuration name="CheckoutCompleteTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SaucedemoProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.saucelabs.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.saucelabs.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.CheckoutCompleteTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckoutCompleteTests.orderProcessTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SaucedemoProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.saucelabs.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.saucelabs.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.CheckoutCompleteTests" />
+      <option name="METHOD_NAME" value="orderProcessTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckoutOverviewTests.orderProcessTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SaucedemoProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.saucelabs.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.saucelabs.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.CheckoutOverviewTests" />
+      <option name="METHOD_NAME" value="orderProcessTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomePageTests.goToCartTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SaucedemoProject" />
       <extension name="coverage">
         <pattern>
@@ -63,86 +120,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.saucelabs.tests" />
       <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.HomePageTests" />
-      <option name="METHOD_NAME" value="sortProductPriceLowToHigh" />
+      <option name="METHOD_NAME" value="goToCartTest" />
       <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HopePageTests.sortProductNamesAToZ" type="TestNG" temporary="true">
-      <module name="SaucedemoProject" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.saucelabs.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/alltests.xml" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTests" type="TestNG" temporary="true">
-      <module name="SaucedemoProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.saucelabs.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.saucelabs.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.LoginTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LogoutTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SaucedemoProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.saucelabs.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.saucelabs.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.LogoutTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="/Users/macbook/Downloads/SaucedemoProject/alltests.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SaucedemoProject" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/alltests.xml" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
@@ -169,19 +148,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.HomePageTests.sortProductPriceLowToHigh" />
       <item itemvalue="TestNG./Users/macbook/Downloads/SaucedemoProject/alltests.xml" />
-      <item itemvalue="TestNG.HopePageTests.sortProductNamesAToZ" />
-      <item itemvalue="TestNG.LoginTests" />
-      <item itemvalue="TestNG.LogoutTests" />
+      <item itemvalue="TestNG.CheckoutCompleteTests" />
+      <item itemvalue="TestNG.CheckoutOverviewTests.orderProcessTest" />
+      <item itemvalue="TestNG.CheckoutCompleteTests.orderProcessTest" />
+      <item itemvalue="TestNG.HomePageTests.goToCartTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CheckoutOverviewTests.orderProcessTest" />
+        <item itemvalue="TestNG.CheckoutCompleteTests.orderProcessTest" />
+        <item itemvalue="TestNG.CheckoutCompleteTests" />
         <item itemvalue="TestNG./Users/macbook/Downloads/SaucedemoProject/alltests.xml" />
-        <item itemvalue="TestNG.HomePageTests.sortProductPriceLowToHigh" />
-        <item itemvalue="TestNG.HopePageTests.sortProductNamesAToZ" />
-        <item itemvalue="TestNG./Users/macbook/Downloads/SaucedemoProject/alltests.xml" />
-        <item itemvalue="TestNG.LogoutTests" />
+        <item itemvalue="TestNG.HomePageTests.goToCartTest" />
       </list>
     </recent_temporary>
   </component>
@@ -320,7 +299,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674480161496</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Screenshot">
+      <created>1674752694819</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1674752694819</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">

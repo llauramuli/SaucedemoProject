@@ -10,7 +10,6 @@ import java.time.Duration;
 public class WaitUtils {
     //explicit waits qe kan me u perdor ne framework ex. element.clickable, enabled, visible, notvisible etc...
     //metodat behen statike-nuk kemi nevoje me kriju object te klases
-    //static nuk ki nevoje me thirr object pe zojm new = test
     private static WebDriverWait wait;
 
     public static void waitUntilElmIsDisplayed(By elm){
