@@ -1,4 +1,4 @@
-package com.saucelabs.tests;
+package com.saucelabs.tests.checkoutTests;
 
 import com.saucelabs.utilities.BaseClass;
 

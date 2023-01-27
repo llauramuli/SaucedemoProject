@@ -2,22 +2,18 @@ package com.saucelabs.tests;
 
 import com.saucelabs.pages.HomePage;
 import com.saucelabs.pages.LoginPage;
-import com.saucelabs.pages.checkoutPages.CartPage;
-import com.saucelabs.pages.checkoutPages.CheckoutCompletePage;
-import com.saucelabs.pages.checkoutPages.CheckoutInformationPage;
-import com.saucelabs.pages.checkoutPages.CheckoutOverviewPage;
 import com.saucelabs.pages.productDetailsPages.SauceLabsBackpackPage;
 import com.saucelabs.pages.productDetailsPages.SauceLabsBikeLightPage;
 import com.saucelabs.utilities.BaseClass;
+import com.saucelabs.utilities.WaitUtils;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class HomePageTests extends BaseClass {
     private LoginPage loginPage = new LoginPage();
-    public HomePage homePage = new HomePage();
-
-    public SauceLabsBackpackPage sauceLabsBackpackPage = new SauceLabsBackpackPage();
-    public SauceLabsBikeLightPage sauceLabsBikeLightPage = new SauceLabsBikeLightPage();
+    private HomePage homePage = new HomePage();
+    private SauceLabsBackpackPage sauceLabsBackpackPage = new SauceLabsBackpackPage();
+    private SauceLabsBikeLightPage sauceLabsBikeLightPage = new SauceLabsBikeLightPage();
 
     @Test
     public void totalNumberOfProductsTest(){
@@ -33,30 +29,30 @@ public class HomePageTests extends BaseClass {
 //        Assert.assertEquals(homePage.getDetailsPrice(), "$29.99", "Price is not the same!");
     }
     @Test
-    public void sortProductNamesZToATest() throws InterruptedException {
+    public void sortProductNamesZToATest() {
         loginPage.LoginValidData();
         //for demo purposes we've added a thread.sleep
-        Thread.sleep(3000);
+        WaitUtils.sleep(3);
         homePage.sortProductNamesZtoA();
 
         Assert.assertEquals(homePage.sortedProductTitleList, homePage.sortedOriginalProductTitleList, "Product Names not sorting correctly!");
-        Thread.sleep(3000);
+        WaitUtils.sleep(3);
     }
     @Test
-    public void sortProductNamesAToZTest() throws InterruptedException {
+    public void sortProductNamesAToZTest() {
         loginPage.LoginValidData();
         homePage.sortProductNamesAToZ();
 
         Assert.assertEquals(homePage.sortedProductTitleList, homePage.sortedOriginalProductTitleList, "Product Names not sorting correctly!");
-        Thread.sleep(3000);
+        WaitUtils.sleep(3);
     }
     @Test
-    public void sortProductPriceLowToHighTest() throws InterruptedException {
+    public void sortProductPriceLowToHighTest() {
         loginPage.LoginValidData();
         homePage.sortProductPriceLowToHigh();
 
         Assert.assertEquals(homePage.sortedProductTitleList, homePage.sortedOriginalProductTitleList, "Product Price not sorting correctly!");
-        Thread.sleep(3000);
+        WaitUtils.sleep(3);
     }
     @Test
     public void sortProductPriceHighToLowTest() {
@@ -64,14 +60,5 @@ public class HomePageTests extends BaseClass {
         homePage.sortProductPriceHighToLow();
 
         Assert.assertEquals(homePage.sortedProductTitleList, homePage.sortedOriginalProductTitleList, "Product Price not sorting correctly!");
-    }
-
-    @Test
-    public void goToCartTest() throws InterruptedException{
-        loginPage.LoginValidData();
-        Thread.sleep(3000);
-        homePage.goToCart();
-        Thread.sleep(3000);
-
     }
 }

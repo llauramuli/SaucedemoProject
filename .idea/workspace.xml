@@ -4,19 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7057bbcf-bdce-4bd2-9456-8b9fff7d15f2" name="Changes" comment="Screenshot">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/checkoutPages/CartPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/checkoutPages/CheckoutCompletePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/checkoutPages/CheckoutInformationPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/checkoutPages/CheckoutOverviewPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/CheckoutCompleteTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/CheckoutOverviewTests.java" afterDir="false" />
+    <list default="true" id="7057bbcf-bdce-4bd2-9456-8b9fff7d15f2" name="Changes" comment="checkout completed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alltests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/alltests.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/CheckoutCompleteTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/checkoutTests/CheckoutCompleteTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/CheckoutOverviewTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/checkoutTests/CheckoutOverviewTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/HomePageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/HomePageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/utilities/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/utilities/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/utilities/WaitUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/utilities/WaitUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/LogoutTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/LogoutTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,17 +52,17 @@
       <recent name="com.saucelabs.tests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CheckoutOverviewTests.orderProcessTest">
+  <component name="RunManager" selected="TestNG./Users/macbook/Downloads/SaucedemoProject/alltests.xml">
     <configuration name="CheckoutCompleteTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SaucedemoProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.saucelabs.tests.*" />
+          <option name="PATTERN" value="com.saucelabs.tests.checkoutTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.saucelabs.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.CheckoutCompleteTests" />
+      <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.checkoutTests.CheckoutCompleteTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -78,12 +74,12 @@
       <module name="SaucedemoProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.saucelabs.tests.*" />
+          <option name="PATTERN" value="com.saucelabs.tests.checkoutTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.saucelabs.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.CheckoutCompleteTests" />
+      <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.checkoutTests.CheckoutCompleteTests" />
       <option name="METHOD_NAME" value="orderProcessTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -96,12 +92,12 @@
       <module name="SaucedemoProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.saucelabs.tests.*" />
+          <option name="PATTERN" value="com.saucelabs.tests.checkoutTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.saucelabs.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.CheckoutOverviewTests" />
+      <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.checkoutTests.CheckoutOverviewTests" />
       <option name="METHOD_NAME" value="orderProcessTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -114,7 +110,7 @@
       <module name="SaucedemoProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.saucelabs.tests.*" />
+          <option name="PATTERN" value="com.saucelabs.tests.checkoutTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -156,11 +152,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG./Users/macbook/Downloads/SaucedemoProject/alltests.xml" />
+        <item itemvalue="TestNG.HomePageTests.goToCartTest" />
         <item itemvalue="TestNG.CheckoutOverviewTests.orderProcessTest" />
         <item itemvalue="TestNG.CheckoutCompleteTests.orderProcessTest" />
         <item itemvalue="TestNG.CheckoutCompleteTests" />
-        <item itemvalue="TestNG./Users/macbook/Downloads/SaucedemoProject/alltests.xml" />
-        <item itemvalue="TestNG.HomePageTests.goToCartTest" />
       </list>
     </recent_temporary>
   </component>
@@ -306,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674752694819</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="checkout completed">
+      <created>1674814025617</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1674814025617</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -356,7 +359,8 @@
     <MESSAGE value="Allure installation" />
     <MESSAGE value="Report" />
     <MESSAGE value="Screenshot" />
-    <option name="LAST_COMMIT_MESSAGE" value="Screenshot" />
+    <MESSAGE value="checkout completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="checkout completed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

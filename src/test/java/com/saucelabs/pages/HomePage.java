@@ -52,7 +52,7 @@ public class HomePage extends BasePage {
 
     public List<String> sortedProductTitleList;
 
-    public void sortProductNamesZtoA() throws InterruptedException {
+    public void sortProductNamesZtoA() {
         WaitUtils.waitUntilElmIsVisible(By.className("active_option"));
         BrowserUtils.selectByValue("za", productSortContainer);
         // Since product list is *pass-by-reference* we need to create a copy of that list and paste it into a new list called original product list
@@ -121,6 +121,7 @@ public class HomePage extends BasePage {
         sauceLabsBackpack.click();
         sauceLabsBoltTShirt.click();
         sauceLabsFleeceJacket.click();
+        WaitUtils.waitUntilElmIsClickable(addToCart);
         addToCart.click();
 
     }

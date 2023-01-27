@@ -11,13 +11,10 @@ public class LoginPage extends BasePage {
 
     @FindBy(id = "user-name")
     private WebElement username;
-
     @FindBy(id = "password")
     private WebElement password;
-
     @FindBy(id = "login-button")
     private WebElement login;
-
     @FindBy(xpath = "//*[contains(text(), 'Epic sadface:')]")
     public WebElement errorMessage;
 
@@ -55,10 +52,4 @@ public class LoginPage extends BasePage {
         login.click();
     }
 
-
-
-//    @FindBy(id=)
-    // variablat deklarohen private - metodat krijohen publike
-    // per cdo faqe krijohet nje page ne vete
-    //
 }

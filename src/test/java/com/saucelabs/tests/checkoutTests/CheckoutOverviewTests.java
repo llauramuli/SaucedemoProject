@@ -1,4 +1,4 @@
-package com.saucelabs.tests;
+package com.saucelabs.tests.checkoutTests;
 
 import com.saucelabs.pages.HomePage;
 import com.saucelabs.pages.LoginPage;
@@ -13,16 +13,11 @@ import org.testng.annotations.Test;
 public class CheckoutOverviewTests extends BaseClass {
 
     private LoginPage loginPage = new LoginPage();
-
-    public HomePage homePage = new HomePage();
-
-    public CartPage cartPage = new CartPage();
-
-    public CheckoutInformationPage checkoutInformationPage = new CheckoutInformationPage();
-
-    public CheckoutOverviewPage checkoutOverviewPage = new CheckoutOverviewPage();
-
-    public CheckoutCompletePage checkoutCompletePage = new CheckoutCompletePage();
+    private HomePage homePage = new HomePage();
+    private CartPage cartPage = new CartPage();
+    private CheckoutInformationPage checkoutInformationPage = new CheckoutInformationPage();
+    private CheckoutOverviewPage checkoutOverviewPage = new CheckoutOverviewPage();
+    private CheckoutCompletePage checkoutCompletePage = new CheckoutCompletePage();
 
 
     @Test
