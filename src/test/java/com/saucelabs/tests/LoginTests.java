@@ -14,32 +14,32 @@ public class LoginTests extends BaseClass {
     @Test
     public void loginValidDataTest(){
         loginPage.verifyLoginPage();
-        loginPage.LoginValidData();
+        loginPage.loginValidData();
         homePage.verifyHomePage();
     }
 
     @Test
     public void loginInvalidDataTest(){
-        loginPage.LoginInvalidData();
+        loginPage.loginInvalidData();
         Assert.assertTrue(loginPage.errorMessage.isDisplayed(), "Error message is not displayed");
     }
 
     @Test
     public void LoginEmptyUsernameAndPasswordTest(){
-        loginPage.LoginEmptyUsernameAndPassword();
+        loginPage.loginEmptyUsernameAndPassword();
         Assert.assertTrue(loginPage.errorMessage.isDisplayed(), "Error message is not displayed");
     }
 
     @Test
     public void LoginValidUsernameAndEmptyPasswordTest(){
-        loginPage.LoginValidUsernameAndEmptyPassword();;
+        loginPage.loginValidUsernameAndEmptyPassword();;
         Assert.assertTrue(loginPage.errorMessage.isDisplayed(), "Error message is not displayed");
 
     }
 
     @Test
     public void LoginValidPasswordAndEmptyUsernameTest(){
-        loginPage.LoginValidPasswordAndEmptyUsername();
+        loginPage.loginValidPasswordAndEmptyUsername();
         Assert.assertTrue(loginPage.errorMessage.isDisplayed(), "Error message is not displayed");
     }
 }

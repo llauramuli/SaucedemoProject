@@ -28,9 +28,13 @@ public abstract class BaseClass {
             try{
                 TakesScreenshot scrShot = ((TakesScreenshot) driver);
                 File SrcFile = scrShot.getScreenshotAs(OutputType.FILE);
-                File DestFile = new File("/Users/macbook/Downloads/SaucedemoProject/target/screenshots-for-failed-tests/"
+//                File DestFile = new File("/Users/macbook/Downloads/SaucedemoProject/target/screenshots-for-failed-tests/"
+//                        + result.getName() + ".png");
+                File DestFile = new File(System.getProperty("user.dir")
+                        + "/Downloads/SaucedemoProject/target/screenshots-for-failed-testcases/"
                         + result.getName() + ".png");
                 FileUtils.copyFile(SrcFile, DestFile);
+
             }catch (Exception e){
                 e.printStackTrace();
             }

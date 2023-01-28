@@ -22,14 +22,14 @@ public class CheckoutOverviewTests extends BaseClass {
 
     @Test
     public void orderProcessTest(){
-        loginPage.LoginValidData();
+        loginPage.loginValidData();
         homePage.goToCart();
         cartPage.addToCart();
         checkoutInformationPage.checkoutInformation();
 //        System.out.println(checkoutCompletePage.totalItemSum());
 //        System.out.println(checkoutOverviewPage.productTotalPrice());
-        Assert.assertEquals(checkoutCompletePage.totalItemSum(), checkoutOverviewPage.productTotalPrice(),"Calculation doesn't match" );
-        Assert.assertEquals(checkoutCompletePage.totalPriceWithTax(), checkoutCompletePage.calculateTotalPrice(), "Calculation doesn't match with tax");
+        Assert.assertEquals(checkoutOverviewPage.totalItemSum(), checkoutOverviewPage.productTotalPrice(),"Calculation doesn't match" );
+        Assert.assertEquals(checkoutOverviewPage.totalPriceWithTax(), checkoutOverviewPage.calculateTotalPrice(), "Calculation doesn't match with tax");
         checkoutOverviewPage.completePurchase();
     }
 }

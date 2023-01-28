@@ -11,8 +11,10 @@ public class SauceLabsBikeLightPage extends BasePage {
     @FindBy(className = "inventory_details_price")
     private WebElement detailsPrice;
 
-    public String getDetailsPrice(){
+    public String productDetailPrice;
+
+    public void getDetailsPrice(){
         productTitle.click();
-        return detailsPrice.getText();
+        productDetailPrice = detailsPrice.getText();
     }
 }
