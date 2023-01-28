@@ -16,14 +16,14 @@ public class HomePageTests extends BaseClass {
     private final SauceLabsBikeLightPage sauceLabsBikeLightPage = new SauceLabsBikeLightPage();
 
     @Test
-    public void verifyTotalNumberOfProductsTest(){
+    public void verifyTotalNumberOfProductsTest() {
         loginPage.loginWithValidData();
 
         Assert.assertEquals(homePage.getTotalNumberOfProducts(), 6, "Total number of products is not 6!");
     }
 
     @Test
-    public void verifySauceLabsBackpackProductPriceTest(){
+    public void verifySauceLabsBackpackProductPriceTest() {
         //Arrange
         loginPage.loginWithValidData();
 
@@ -38,7 +38,7 @@ public class HomePageTests extends BaseClass {
     }
 
     @Test
-    public void verifySauceLabsBikeLightProductPriceTest(){
+    public void verifySauceLabsBikeLightProductPriceTest() {
         loginPage.loginWithValidData();
 
         homePage.getSauceLabsBikeLightProductPrice();

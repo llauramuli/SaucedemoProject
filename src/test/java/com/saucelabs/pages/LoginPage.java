@@ -29,8 +29,8 @@ public class LoginPage extends BasePage {
     }
 
     public void loginWithInvalidData(){
-        username.sendKeys("sauce.username");
-        password.sendKeys("testtesttest");
+        username.sendKeys("invalid-username");
+        password.sendKeys("invalid-password");
         login.click();
     }
 
@@ -41,14 +41,14 @@ public class LoginPage extends BasePage {
     }
 
     public void loginWithValidUsernameAndEmptyPassword(){
-        username.sendKeys("sauce.username");
+        username.sendKeys(ConfigurationReader.getProperty("sauce.username"));
         password.sendKeys("");
         login.click();
     }
 
     public void loginWithValidPasswordAndEmptyUsername(){
         username.sendKeys("");
-        password.sendKeys("sauce.password");
+        password.sendKeys(ConfigurationReader.getProperty("sauce.password"));
         login.click();
     }
 

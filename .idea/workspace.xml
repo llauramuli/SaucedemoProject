@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7057bbcf-bdce-4bd2-9456-8b9fff7d15f2" name="Changes" comment="clean up code">
+    <list default="true" id="7057bbcf-bdce-4bd2-9456-8b9fff7d15f2" name="Changes" comment="refactor home page code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/HomePageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/HomePageTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/LoginTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +51,7 @@
       <recent name="$PROJECT_DIR$/src/main/alltests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG./Users/macbook/Downloads/SaucedemoProject/src/main/alltests/alltests.xml">
+  <component name="RunManager" selected="TestNG.HomePageTests">
     <configuration name="HomePageTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SaucedemoProject" />
       <extension name="coverage">
@@ -140,9 +142,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.HomePageTests" />
         <item itemvalue="TestNG./Users/macbook/Downloads/SaucedemoProject/src/main/alltests/alltests.xml" />
         <item itemvalue="TestNG.LogoutTests.userLogoutTest" />
-        <item itemvalue="TestNG.HomePageTests" />
         <item itemvalue="TestNG.HomePageTests.verifySauceLabsBackpackProductPriceTest" />
         <item itemvalue="TestNG.HomePageTests.verifySauceLabsBikeLightProductPriceTest" />
       </list>
@@ -311,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674910724762</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="refactor home page code">
+      <created>1674912788158</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1674912788158</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -364,18 +373,8 @@
     <MESSAGE value="checkout completed" />
     <MESSAGE value="modifications" />
     <MESSAGE value="clean up code" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean up code" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/saucelabs/tests/LoginTests.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="refactor home page code" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor home page code" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SaucedemoProject$_Users_macbook_Downloads_SaucedemoProject_src_main_testruns_alltests_xml.ic" NAME="$PROJECT_DIR$/src/main/testruns/alltests.xml Coverage Results" MODIFIED="1673980303124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
