@@ -8,6 +8,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.*;
 
 import java.io.File;
+import java.nio.file.Path;
 
 public abstract class BaseClass {
     public WebDriver driver;
@@ -27,16 +28,15 @@ public abstract class BaseClass {
     public void screenShot(ITestResult result){
         if(ITestResult.FAILURE == result.getStatus()){
             try{
-                TakesScreenshot scrShot = ((TakesScreenshot) driver);
-                File SrcFile = scrShot.getScreenshotAs(OutputType.FILE);
-//                File DestFile = new File("/Users/macbook/Downloads/SaucedemoProject/target/screenshots-for-failed-tests/"
-//                        + result.getName() + ".png");
-                File DestFile = new File(System.getProperty("user.dir")
-                        + "/Downloads/SaucedemoProject/target/screenshots-for-failed-testcases/"
-                        + result.getName() + ".png");
-                FileUtils.copyFile(SrcFile, DestFile);
+                TakesScreenshot screenShot = ((TakesScreenshot) driver);
+                File sourceFile = screenShot.getScreenshotAs(OutputType.FILE);
 
-            }catch (Exception e){
+                String filePath = "./src/test/java/com/saucelabs/assets/failedTestScreenShots/" + result.getName() + ".png";
+                File destinationFile = new File(filePath);
+
+                FileUtils.copyFile(sourceFile, destinationFile);
+
+            } catch (Exception e){
                 e.printStackTrace();
             }
         }

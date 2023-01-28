@@ -4,6 +4,7 @@ import com.saucelabs.pages.HomePage;
 import com.saucelabs.pages.LoginPage;
 import com.saucelabs.utilities.BaseClass;
 import org.testng.Assert;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 public class LoginTests extends BaseClass {
@@ -30,6 +31,16 @@ public class LoginTests extends BaseClass {
         loginPage.loginWithInvalidData();
 
         Assert.assertTrue(loginPage.errorMessage.isDisplayed(), "Error message is not displayed");
+    }
+
+    @Ignore
+    @Test
+    public void loginWithInvalidDataFailedTest() {
+        loginPage.verifyLoginPage();
+
+        loginPage.loginWithInvalidData();
+
+        Assert.assertFalse(loginPage.errorMessage.isDisplayed(), "Error message is not displayed");
     }
 
     @Test

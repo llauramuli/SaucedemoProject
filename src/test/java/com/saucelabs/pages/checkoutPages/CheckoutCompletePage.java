@@ -10,4 +10,8 @@ public class CheckoutCompletePage extends BasePage {
     public void verifyCompletePage() {
         BrowserUtils.pageVerification("https://www.saucedemo.com/checkout-complete.html", Driver.getDriver().getCurrentUrl());
     }
+
+    public String getPageText(){
+        return null;
+    }
 }
