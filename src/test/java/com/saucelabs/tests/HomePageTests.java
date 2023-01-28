@@ -57,7 +57,6 @@ public class HomePageTests extends BaseClass {
         homePage.sortProductsByNameUsingZToASort();
 
         Assert.assertEquals(homePage.sortedProductListByTitle, homePage.sortedOriginalProductListByTitle, "Products are not sorted correctly by 'names Z to A' sort!");
-        WaitUtils.sleep(3);
     }
 
     @Test
@@ -67,7 +66,6 @@ public class HomePageTests extends BaseClass {
         homePage.sortProductsByNameUsingAToZSort();
 
         Assert.assertEquals(homePage.sortedProductListByTitle, homePage.sortedOriginalProductListByTitle, "Products are not sorted correctly by 'names A to Z' sort!");
-        WaitUtils.sleep(3);
     }
 
     @Test
@@ -77,7 +75,6 @@ public class HomePageTests extends BaseClass {
         homePage.sortProductsByPriceUsingLowToHighSort();
 
         Assert.assertEquals(homePage.sortedProductListByTitle, homePage.sortedOriginalProductListByTitle, "Products are not sorted correctly by 'prices low to high' sort!");
-        WaitUtils.sleep(3);
     }
 
     @Test

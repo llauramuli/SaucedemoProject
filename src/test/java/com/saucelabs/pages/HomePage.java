@@ -58,8 +58,8 @@ public class HomePage extends BasePage {
 
         sortedOriginalProductListByTitle = originalProductList
                 .stream()
-                .map(originalProduct -> originalProduct.findElements(By.className("inventory_item_name")).get(0).getText())
-                .sorted(Comparator.reverseOrder()).toList();
+                .map(originalProduct -> originalProduct.findElements(By.className("inventory_item_name")).get(0).getText()) // "light", "backpack", "bike"
+                .sorted(Comparator.reverseOrder()).toList(); // "backpack", "bike", "light"
 
         sortedProductListByTitle = productList
                 .stream()
@@ -92,9 +92,9 @@ public class HomePage extends BasePage {
 
         sortedOriginalProductListByPrice = originalProductList
                 .stream()
-                .map(originalProduct -> originalProduct.findElements(By.className("inventory_item_price")).get(0).getText())
-                .map(price -> price.substring(1))
-                .map(Double::valueOf)
+                .map(originalProduct -> originalProduct.findElements(By.className("inventory_item_price")).get(0).getText()) // "$29.99", "$9.99"
+                .map(price -> price.substring(1))// "29.99", "9.99" - still a list of strings
+                .map(Double::valueOf)// Double.valueOf(element);
                 .sorted()
                 .toList();
 
@@ -133,7 +133,7 @@ public class HomePage extends BasePage {
         sauceLabsFleeceJacketAddToCartButton.click();
     }
 
-    public void goToCart(){
+    public void goToCart() {
         WaitUtils.waitUntilElmIsClickable(addToCartElement);
         addToCartElement.click();
     }

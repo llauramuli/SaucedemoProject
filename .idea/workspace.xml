@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7057bbcf-bdce-4bd2-9456-8b9fff7d15f2" name="Changes" comment="delete dir" />
+    <list default="true" id="7057bbcf-bdce-4bd2-9456-8b9fff7d15f2" name="Changes" comment="add sc">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/configuration.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/assets/failedTestScreenShots/userLogoutTest.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/assets/failedTestScreenShots/userLogoutTest.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/checkoutPages/CheckoutCompletePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/checkoutPages/CheckoutCompletePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/checkoutPages/CheckoutInformationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/checkoutPages/CheckoutInformationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/HomePageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/HomePageTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/checkoutTests/CheckoutCompleteTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/checkoutTests/CheckoutCompleteTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/utilities/ConfigurationReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/utilities/ConfigurationReader.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,12 +53,31 @@
       <recent name="com.saucelabs.tests" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
       <recent name="$PROJECT_DIR$/src/test/java/com/saucelabs" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/alltests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTests">
+  <component name="RunManager" selected="TestNG.HomePageTests">
+    <configuration name="CheckoutCompleteTests.verifyText" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SaucedemoProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.saucelabs.tests.checkoutTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.saucelabs.tests.checkoutTests" />
+      <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.checkoutTests.CheckoutCompleteTests" />
+      <option name="METHOD_NAME" value="verifyText" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HomePageTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SaucedemoProject" />
       <extension name="coverage">
@@ -101,36 +130,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTests.loginWithInvalidDataTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="/Users/macbook/Downloads/SaucedemoProject/src/main/alltests/alltests.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SaucedemoProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.saucelabs.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.saucelabs.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.LoginTests" />
-      <option name="METHOD_NAME" value="loginWithInvalidDataTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LogoutTests.userLogoutTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SaucedemoProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.saucelabs.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.saucelabs.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.LogoutTests" />
-      <option name="METHOD_NAME" value="userLogoutTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/main/alltests/alltests.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
@@ -139,18 +142,18 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.HomePageTests" />
+      <item itemvalue="TestNG.CheckoutCompleteTests.verifyText" />
       <item itemvalue="TestNG.LoginTests" />
       <item itemvalue="TestNG.LoginTests.loginWithInvalidDataFailedTest" />
-      <item itemvalue="TestNG.LoginTests.loginWithInvalidDataTest" />
-      <item itemvalue="TestNG.LogoutTests.userLogoutTest" />
+      <item itemvalue="TestNG./Users/macbook/Downloads/SaucedemoProject/src/main/alltests/alltests.xml" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.HomePageTests" />
+        <item itemvalue="TestNG./Users/macbook/Downloads/SaucedemoProject/src/main/alltests/alltests.xml" />
+        <item itemvalue="TestNG.CheckoutCompleteTests.verifyText" />
         <item itemvalue="TestNG.LoginTests" />
         <item itemvalue="TestNG.LoginTests.loginWithInvalidDataFailedTest" />
-        <item itemvalue="TestNG.LoginTests.loginWithInvalidDataTest" />
-        <item itemvalue="TestNG.LogoutTests.userLogoutTest" />
-        <item itemvalue="TestNG.HomePageTests" />
       </list>
     </recent_temporary>
   </component>
@@ -380,7 +383,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674922100234</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="add sc">
+      <created>1674922555535</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1674922555535</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -441,7 +451,8 @@
     <MESSAGE value="refactor screen-shot process" />
     <MESSAGE value="trigger add dir" />
     <MESSAGE value="delete dir" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete dir" />
+    <MESSAGE value="add sc" />
+    <option name="LAST_COMMIT_MESSAGE" value="add sc" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SaucedemoProject$_Users_macbook_Downloads_SaucedemoProject_src_main_testruns_alltests_xml.ic" NAME="$PROJECT_DIR$/src/main/testruns/alltests.xml Coverage Results" MODIFIED="1673980303124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
