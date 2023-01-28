@@ -18,35 +18,35 @@ public class LoginPage extends BasePage {
     @FindBy(xpath = "//*[contains(text(), 'Epic sadface:')]")
     public WebElement errorMessage;
 
-    public void verifyLoginPage(){
+    public void verifyLoginPage() {
         BrowserUtils.pageVerification("https://www.saucedemo.com/", Driver.getDriver().getCurrentUrl());
     }
 
-    public void loginWithValidData(){
+    public void loginWithValidData() {
         username.sendKeys(ConfigurationReader.getProperty("sauce.username"));
         password.sendKeys(ConfigurationReader.getProperty("sauce.password"));
         login.click();
     }
 
-    public void loginWithInvalidData(){
+    public void loginWithInvalidData() {
         username.sendKeys("invalid-username");
         password.sendKeys("invalid-password");
         login.click();
     }
 
-    public void loginWithEmptyUsernameAndPassword(){
+    public void loginWithEmptyUsernameAndPassword() {
         username.sendKeys("");
         password.sendKeys("");
         login.click();
     }
 
-    public void loginWithValidUsernameAndEmptyPassword(){
+    public void loginWithValidUsernameAndEmptyPassword() {
         username.sendKeys(ConfigurationReader.getProperty("sauce.username"));
         password.sendKeys("");
         login.click();
     }
 
-    public void loginWithValidPasswordAndEmptyUsername(){
+    public void loginWithValidPasswordAndEmptyUsername() {
         username.sendKeys("");
         password.sendKeys(ConfigurationReader.getProperty("sauce.password"));
         login.click();

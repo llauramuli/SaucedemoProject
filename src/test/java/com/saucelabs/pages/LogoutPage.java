@@ -14,8 +14,8 @@ public class LogoutPage extends BasePage {
     private WebElement logout;
 
     public void userLogout() {
-            burgerMenu.click();
-            WaitUtils.waitUntilElmIsClickable(burgerMenu);
-            logout.click();
-        }
+        burgerMenu.click();
+        WaitUtils.waitUntilElmIsClickable(burgerMenu);
+        logout.click();
+    }
 }

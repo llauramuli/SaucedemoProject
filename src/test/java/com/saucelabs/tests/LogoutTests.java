@@ -4,21 +4,23 @@ import com.saucelabs.pages.HomePage;
 import com.saucelabs.pages.LoginPage;
 import com.saucelabs.pages.LogoutPage;
 import com.saucelabs.utilities.BaseClass;
-import com.saucelabs.utilities.Driver;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class LogoutTests extends BaseClass {
-    private LoginPage loginPage = new LoginPage();
-    private HomePage homePage = new HomePage();
-    private LogoutPage logoutPage = new LogoutPage();
-//    private String expUrl = "https://www.saucedemo.com/";
+    private final LoginPage loginPage = new LoginPage();
+    private final HomePage homePage = new HomePage();
+    private final LogoutPage logoutPage = new LogoutPage();
 
     @Test
-    public void userLogoutTest()  {
+    public void userLogoutTest() {
+        //Arrange
         loginPage.loginWithValidData();
+        homePage.verifyHomePage();
+
+        //Act
         logoutPage.userLogout();
-//        Assert.assertTrue(driver.getCurrentUrl().equals(expUrl));
-        Assert.assertEquals(Driver.getDriver().getCurrentUrl(), "https://www.saucedemo.com/");
+
+        //Assert
+        loginPage.verifyLoginPage();
     }
 }

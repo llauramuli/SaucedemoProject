@@ -12,7 +12,7 @@ public class LoginTests extends BaseClass {
     private final HomePage homePage = new HomePage();
 
     @Test
-    public void loginWithValidDataTest(){
+    public void loginWithValidDataTest() {
         //Arrange
         loginPage.verifyLoginPage();
 
@@ -24,7 +24,7 @@ public class LoginTests extends BaseClass {
     }
 
     @Test
-    public void loginWithInvalidDataTest(){
+    public void loginWithInvalidDataTest() {
         loginPage.verifyLoginPage();
 
         loginPage.loginWithInvalidData();
@@ -33,7 +33,7 @@ public class LoginTests extends BaseClass {
     }
 
     @Test
-    public void loginWithEmptyUsernameAndPasswordTest(){
+    public void loginWithEmptyUsernameAndPasswordTest() {
         loginPage.verifyLoginPage();
 
         loginPage.loginWithEmptyUsernameAndPassword();
@@ -42,7 +42,7 @@ public class LoginTests extends BaseClass {
     }
 
     @Test
-    public void loginWithValidUsernameAndEmptyPasswordTest(){
+    public void loginWithValidUsernameAndEmptyPasswordTest() {
         loginPage.verifyLoginPage();
 
         loginPage.loginWithValidUsernameAndEmptyPassword();
@@ -52,7 +52,7 @@ public class LoginTests extends BaseClass {
     }
 
     @Test
-    public void loginWithValidPasswordAndEmptyUsernameTest(){
+    public void loginWithValidPasswordAndEmptyUsernameTest() {
         loginPage.verifyLoginPage();
 
         loginPage.loginWithValidPasswordAndEmptyUsername();
