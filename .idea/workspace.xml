@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7057bbcf-bdce-4bd2-9456-8b9fff7d15f2" name="Changes" comment="modifications">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alltests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/alltests/alltests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/checkoutPages/CheckoutCompletePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/checkoutPages/CheckoutCompletePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/checkoutPages/CheckoutOverviewPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/checkoutPages/CheckoutOverviewPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/productDetailsPages/SauceLabsBackpackPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/productDetailsPages/SauceLabsBackpackPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/productDetailsPages/SauceLabsBikeLightPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/productDetailsPages/SauceLabsBikeLightPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/HomePageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/HomePageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/LoginTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/LogoutTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/LogoutTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/checkoutTests/CheckoutCompleteTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/checkoutTests/CheckoutCompleteTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/checkoutTests/CheckoutOverviewTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/checkoutTests/CheckoutOverviewTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/utilities/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/utilities/BaseClass.java" afterDir="false" />
-    </list>
+    <list default="true" id="7057bbcf-bdce-4bd2-9456-8b9fff7d15f2" name="Changes" comment="modifications" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
