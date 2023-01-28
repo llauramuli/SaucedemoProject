@@ -16,7 +16,7 @@ public class LogoutTests extends BaseClass {
 
     @Test
     public void userLogoutTest()  {
-        loginPage.loginValidData();
+        loginPage.loginWithValidData();
         logoutPage.userLogout();
 //        Assert.assertTrue(driver.getCurrentUrl().equals(expUrl));
         Assert.assertEquals(Driver.getDriver().getCurrentUrl(), "https://www.saucedemo.com/");

@@ -22,7 +22,7 @@ public class CheckoutOverviewTests extends BaseClass {
 
     @Test
     public void orderProcessTest(){
-        loginPage.loginValidData();
+        loginPage.loginWithValidData();
         homePage.goToCart();
         cartPage.addToCart();
         checkoutInformationPage.checkoutInformation();

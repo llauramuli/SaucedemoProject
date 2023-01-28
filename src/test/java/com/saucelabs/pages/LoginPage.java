@@ -22,31 +22,31 @@ public class LoginPage extends BasePage {
         BrowserUtils.pageVerification("https://www.saucedemo.com/", Driver.getDriver().getCurrentUrl());
     }
 
-    public void loginValidData(){
+    public void loginWithValidData(){
         username.sendKeys(ConfigurationReader.getProperty("sauce.username"));
         password.sendKeys(ConfigurationReader.getProperty("sauce.password"));
         login.click();
     }
 
-    public void loginInvalidData(){
+    public void loginWithInvalidData(){
         username.sendKeys("sauce.username");
         password.sendKeys("testtesttest");
         login.click();
     }
 
-    public void loginEmptyUsernameAndPassword(){
+    public void loginWithEmptyUsernameAndPassword(){
         username.sendKeys("");
         password.sendKeys("");
         login.click();
     }
 
-    public void loginValidUsernameAndEmptyPassword(){
+    public void loginWithValidUsernameAndEmptyPassword(){
         username.sendKeys("sauce.username");
         password.sendKeys("");
         login.click();
     }
 
-    public void loginValidPasswordAndEmptyUsername(){
+    public void loginWithValidPasswordAndEmptyUsername(){
         username.sendKeys("");
         password.sendKeys("sauce.password");
         login.click();

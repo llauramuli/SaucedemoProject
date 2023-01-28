@@ -10,81 +10,82 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class HomePageTests extends BaseClass {
-    private LoginPage loginPage = new LoginPage();
-    private HomePage homePage = new HomePage();
-    private SauceLabsBackpackPage sauceLabsBackpackPage = new SauceLabsBackpackPage();
-    private SauceLabsBikeLightPage sauceLabsBikeLightPage = new SauceLabsBikeLightPage();
+    private final LoginPage loginPage = new LoginPage();
+    private final HomePage homePage = new HomePage();
+    private final SauceLabsBackpackPage sauceLabsBackpackPage = new SauceLabsBackpackPage();
+    private final SauceLabsBikeLightPage sauceLabsBikeLightPage = new SauceLabsBikeLightPage();
 
     @Test
-    public void totalNumberOfProductsTest(){
-        loginPage.loginValidData();
-        Assert.assertEquals(homePage.totalNumberOfProducts(), 6, "Number of elements is not 6!");
+    public void verifyTotalNumberOfProductsTest(){
+        loginPage.loginWithValidData();
+
+        Assert.assertEquals(homePage.getTotalNumberOfProducts(), 6, "Total number of products is not 6!");
     }
 
     @Test
     public void verifySauceLabsBackpackProductPriceTest(){
-        loginPage.loginValidData();
+        //Arrange
+        loginPage.loginWithValidData();
 
+        //Act
         homePage.getSauceLabsBackpackProductPrice();
         sauceLabsBackpackPage.getDetailsPrice();
 
+        //Assert
         Assert.assertEquals(homePage.productPrice, sauceLabsBackpackPage.productDetailPrice, "Product price and product detail price is not the same!");
-        Assert.assertEquals(homePage.productPrice, "$29.99", "Product price is not the same!");
-        Assert.assertEquals(sauceLabsBackpackPage.productDetailPrice, "$29.99", "Product detail price is not the same!");
+        Assert.assertEquals(homePage.productPrice, "$29.99", "Product price is not $29.99!");
+        Assert.assertEquals(sauceLabsBackpackPage.productDetailPrice, "$29.99", "Product detail price is not $29.99!");
     }
 
     @Test
     public void verifySauceLabsBikeLightProductPriceTest(){
-        loginPage.loginValidData();
+        loginPage.loginWithValidData();
 
         homePage.getSauceLabsBikeLightProductPrice();
         sauceLabsBikeLightPage.getDetailsPrice();
 
         Assert.assertEquals(homePage.productPrice, sauceLabsBikeLightPage.productDetailPrice, "Product price and product detail price is not the same!");
-        Assert.assertEquals(homePage.productPrice, "$9.99", "Product price is not the same!");
-        Assert.assertEquals(sauceLabsBikeLightPage.productDetailPrice, "$9.99", "Product detail price is not the same!");
+        Assert.assertEquals(homePage.productPrice, "$9.99", "Product price is not $9.99!");
+        Assert.assertEquals(sauceLabsBikeLightPage.productDetailPrice, "$9.99", "Product detail price is not $9.99!");
     }
 
     @Test
-    public void sortProductNamesZToATest() {
-        //Arrange
-        loginPage.loginValidData();
+    public void sortProductsByNameUsingZToASortTest() {
+        loginPage.loginWithValidData();
 
-        //Act
-        WaitUtils.sleep(3); //For demo purposes we've added a thread.sleep
-        homePage.sortProductNamesZtoA();
+        WaitUtils.sleep(3); //Added for demo purposes
+        homePage.sortProductsByNameUsingZToASort();
 
-        //Assert
-        Assert.assertEquals(homePage.sortedProductTitleList, homePage.sortedOriginalProductTitleList, "Product Names not sorting correctly!");
+        Assert.assertEquals(homePage.sortedProductListByTitle, homePage.sortedOriginalProductListByTitle, "Products are not sorted correctly by 'names Z to A' sort!");
         WaitUtils.sleep(3);
     }
 
     @Test
-    public void sortProductNamesAToZTest() {
-        loginPage.loginValidData();
+    public void sortProductsByNameUsingAToZSortTest() {
+        loginPage.loginWithValidData();
 
-        homePage.sortProductNamesAToZ();
+        homePage.sortProductsByNameUsingAToZSort();
 
-        Assert.assertEquals(homePage.sortedProductTitleList, homePage.sortedOriginalProductTitleList, "Product Names not sorting correctly!");
+        Assert.assertEquals(homePage.sortedProductListByTitle, homePage.sortedOriginalProductListByTitle, "Products are not sorted correctly by 'names A to Z' sort!");
         WaitUtils.sleep(3);
     }
 
     @Test
-    public void sortProductPriceLowToHighTest() {
-        loginPage.loginValidData();
+    public void sortProductsByPriceUsingLowToHighSortTest() {
+        loginPage.loginWithValidData();
 
-        homePage.sortProductPriceLowToHigh();
+        homePage.sortProductsByPriceUsingLowToHighSort();
 
-        Assert.assertEquals(homePage.sortedProductTitleList, homePage.sortedOriginalProductTitleList, "Product Price not sorting correctly!");
+        Assert.assertEquals(homePage.sortedProductListByTitle, homePage.sortedOriginalProductListByTitle, "Products are not sorted correctly by 'prices low to high' sort!");
         WaitUtils.sleep(3);
     }
 
     @Test
-    public void sortProductPriceHighToLowTest() {
-        loginPage.loginValidData();
+    public void sortProductsByPriceUsingHighToLowSortTest() {
+        loginPage.loginWithValidData();
 
-        homePage.sortProductPriceHighToLow();
+        homePage.sortProductsByPriceUsingHighToLowSort();
 
-        Assert.assertEquals(homePage.sortedProductTitleList, homePage.sortedOriginalProductTitleList, "Product Price not sorting correctly!");
+        Assert.assertEquals(homePage.sortedProductListByTitle, homePage.sortedOriginalProductListByTitle, "Products are not sorted correctly by 'prices high to low' sort!");
     }
 }

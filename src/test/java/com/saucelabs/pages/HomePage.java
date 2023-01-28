@@ -27,10 +27,10 @@ public class HomePage extends BasePage {
     private WebElement sauceLabsFleeceJacket;
     @FindBy(className = "shopping_cart_link")
     private WebElement addToCart;
-    public List<String> sortedOriginalProductTitleList;
-    public List<String> sortedProductTitleList;
-    public List<Double> sortedOriginalProductPriceList;
-    public List<Double> sortedProductPriceList;
+    public List<String> sortedOriginalProductListByTitle;
+    public List<String> sortedProductListByTitle;
+    public List<Double> sortedOriginalProductListByPrice;
+    public List<Double> sortedProductListByPrice;
 
     public String productPrice;
 
@@ -46,51 +46,51 @@ public class HomePage extends BasePage {
         productPrice = productPrices.get(1).getText();
     }
 
-    public int totalNumberOfProducts() {
+    public int getTotalNumberOfProducts() {
         return productList.size();
     }
 
-    public void sortProductNamesZtoA() {
+    public void sortProductsByNameUsingZToASort() {
         List<WebElement> originalProductList = new ArrayList<>(productList);
 
         WaitUtils.waitUntilElmIsVisible(By.className("active_option"));
         BrowserUtils.selectByValue("za", productSortContainer);
 
-        sortedOriginalProductTitleList = originalProductList
+        sortedOriginalProductListByTitle = originalProductList
                 .stream()
                 .map(originalProduct -> originalProduct.findElements(By.className("inventory_item_name")).get(0).getText())
                 .sorted(Comparator.reverseOrder()).toList();
 
-        sortedProductTitleList = productList
+        sortedProductListByTitle = productList
                 .stream()
                 .map(originalProduct -> originalProduct.findElements(By.className("inventory_item_name")).get(0).getText())
                 .toList();
     }
 
-    public void sortProductNamesAToZ() {
+    public void sortProductsByNameUsingAToZSort() {
         List<WebElement> originalProductList = new ArrayList<>(productList);
         WaitUtils.waitUntilElmIsVisible(By.className("active_option"));
         BrowserUtils.selectByValue("az", productSortContainer);
 
-        sortedOriginalProductTitleList = originalProductList
+        sortedOriginalProductListByTitle = originalProductList
                 .stream()
                 .map(originalProduct -> originalProduct.findElements(By.className("inventory_item_name")).get(0).getText())
                 .sorted()
                 .toList();
 
-        sortedProductTitleList = productList
+        sortedProductListByTitle = productList
                 .stream()
                 .map(originalProduct -> originalProduct.findElements(By.className("inventory_item_name")).get(0).getText())
                 .toList();
 
     }
 
-    public void sortProductPriceLowToHigh() {
+    public void sortProductsByPriceUsingLowToHighSort() {
         List<WebElement> originalProductList = new ArrayList<>(productList);
         WaitUtils.waitUntilElmIsVisible(By.className("active_option"));
         BrowserUtils.selectByValue("lohi", productSortContainer);
 
-        sortedOriginalProductPriceList = originalProductList
+        sortedOriginalProductListByPrice = originalProductList
                 .stream()
                 .map(originalProduct -> originalProduct.findElements(By.className("inventory_item_price")).get(0).getText())
                 .map(price -> price.substring(1))
@@ -98,7 +98,7 @@ public class HomePage extends BasePage {
                 .sorted()
                 .toList();
 
-        sortedProductPriceList = productList
+        sortedProductListByPrice = productList
                 .stream()
                 .map(originalProduct -> originalProduct.findElements(By.className("inventory_item_price")).get(0).getText())
                 .map(price -> price.substring(1))
@@ -106,12 +106,12 @@ public class HomePage extends BasePage {
                 .toList();
     }
 
-    public void sortProductPriceHighToLow() {
+    public void sortProductsByPriceUsingHighToLowSort() {
         List<WebElement> originalProductList = new ArrayList<>(productList);
         WaitUtils.waitUntilElmIsVisible(By.className("active_option"));
         BrowserUtils.selectByValue("hilo", productSortContainer);
 
-        sortedOriginalProductPriceList = originalProductList
+        sortedOriginalProductListByPrice = originalProductList
                 .stream()
                 .map(originalProduct -> originalProduct.findElements(By.className("inventory_item_price")).get(0).getText())
                 .map(price -> price.substring(1))
@@ -119,7 +119,7 @@ public class HomePage extends BasePage {
                 .sorted(Comparator.reverseOrder())
                 .toList();
 
-        sortedProductPriceList = productList
+        sortedProductListByPrice = productList
                 .stream()
                 .map(originalProduct -> originalProduct.findElements(By.className("inventory_item_price")).get(0).getText())
                 .map(price -> price.substring(1))
