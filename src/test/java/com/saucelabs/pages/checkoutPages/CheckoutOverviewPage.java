@@ -1,6 +1,8 @@
 package com.saucelabs.pages.checkoutPages;
 
 import com.saucelabs.utilities.BasePage;
+import com.saucelabs.utilities.BrowserUtils;
+import com.saucelabs.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -9,67 +11,47 @@ import java.util.List;
 public class CheckoutOverviewPage extends BasePage {
 
     @FindBy(xpath = "//*[@class='inventory_item_price']")
-    private List<WebElement> productPrices;
+    private List<WebElement> productPricesList;
     @FindBy(className = "summary_subtotal_label")
-    private WebElement itemTotal;
+    private WebElement itemTotalPrice;
     @FindBy(className = "summary_tax_label")
-    private WebElement tax;
+    private WebElement taxPrice;
     @FindBy(className = "summary_total_label")
     private WebElement totalPrice;
     @FindBy(id = "finish")
-    private WebElement finish;
+    private WebElement finishButton;
 
-    public double productTotalPrice() {
-        String amounts;
-        double totalAmount = 0.0;
+    public void verifyCheckoutStepTwoPage() {
+        BrowserUtils.pageVerification("https://www.saucedemo.com/checkout-step-two.html", Driver.getDriver().getCurrentUrl());
+    }
 
-        for (WebElement elm : productPrices) {
-        amounts = elm.getText().substring(1);
-        totalAmount += Double.parseDouble(amounts);
-        amounts = "";
+    public Double calculateTotalPriceOfProductsInTheCart() {
+        Double totalAmount = 0.0;
+
+        for (WebElement productPrice : productPricesList) {
+            totalAmount += Double.parseDouble(productPrice.getText().substring(1));
         }
         return totalAmount;
     }
 
-    public double totalItemSum() {
-        String str;
-        double totalAmount = 0.00;
-
-        str = itemTotal.getText().substring(13); // sa karaktere deri te cmimi
-        totalAmount += Double.parseDouble(str);
-
-        return totalAmount;
+    public Double getItemTotalPrice() {
+        return Double.parseDouble(itemTotalPrice.getText().substring(13));
     }
 
-    public double calculateTax(){
-        String str;
-        double totalAmount = 0.00;
-
-        str = tax.getText().substring(6); // sa karaktere deri te cmimi
-        totalAmount += Double.parseDouble(str);
-
-        return totalAmount;
+    public Double getTaxPrice() {
+        return Double.parseDouble(taxPrice.getText().substring(6));
     }
 
-    public double totalPriceWithTax(){
-        String str;
-        double totalAmount = 0.00;
-
-        str = totalPrice.getText().substring(8); // sa karaktere deri te cmimi
-        totalAmount += Double.parseDouble(str);
-
-        return totalAmount;
+    public Double getTotalPrice() {
+        return Double.parseDouble(totalPrice.getText().substring(8));
     }
 
-    public double calculateTotalPrice(){
-        double totalAmount = calculateTax() + totalItemSum();
-
-        return totalAmount;
+    public Double calculateItemTotalPriceWithTax() {
+        return getTaxPrice() + getItemTotalPrice();
 
     }
 
-    public void completePurchase(){
-        finish.click();
+    public void completePurchase() {
+        finishButton.click();
     }
-
 }

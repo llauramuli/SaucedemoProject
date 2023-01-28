@@ -20,13 +20,13 @@ public class HomePage extends BasePage {
     @FindBy(className = "product_sort_container")
     private WebElement productSortContainer;
     @FindBy(id = "add-to-cart-sauce-labs-backpack")
-    private WebElement sauceLabsBackpack;
+    private WebElement sauceLabsBackpackAddToCartButton;
     @FindBy(id = "add-to-cart-sauce-labs-bolt-t-shirt")
-    private WebElement sauceLabsBoltTShirt;
+    private WebElement sauceLabsBoltTShirtAddToCartButton;
     @FindBy(id = "add-to-cart-sauce-labs-fleece-jacket")
-    private WebElement sauceLabsFleeceJacket;
+    private WebElement sauceLabsFleeceJacketAddToCartButton;
     @FindBy(className = "shopping_cart_link")
-    private WebElement addToCart;
+    private WebElement addToCartElement;
     public List<String> sortedOriginalProductListByTitle;
     public List<String> sortedProductListByTitle;
     public List<Double> sortedOriginalProductListByPrice;
@@ -127,12 +127,15 @@ public class HomePage extends BasePage {
                 .toList();
     }
 
-    public void goToCart() {
-        sauceLabsBackpack.click();
-        sauceLabsBoltTShirt.click();
-        sauceLabsFleeceJacket.click();
-        WaitUtils.waitUntilElmIsClickable(addToCart);
-        addToCart.click();
+    public void addProductsToCart() {
+        sauceLabsBackpackAddToCartButton.click();
+        sauceLabsBoltTShirtAddToCartButton.click();
+        sauceLabsFleeceJacketAddToCartButton.click();
+    }
+
+    public void goToCart(){
+        WaitUtils.waitUntilElmIsClickable(addToCartElement);
+        addToCartElement.click();
     }
 
 }

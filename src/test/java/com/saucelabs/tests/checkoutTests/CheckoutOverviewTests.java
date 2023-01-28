@@ -12,24 +12,36 @@ import org.testng.annotations.Test;
 
 public class CheckoutOverviewTests extends BaseClass {
 
-    private LoginPage loginPage = new LoginPage();
-    private HomePage homePage = new HomePage();
-    private CartPage cartPage = new CartPage();
-    private CheckoutInformationPage checkoutInformationPage = new CheckoutInformationPage();
-    private CheckoutOverviewPage checkoutOverviewPage = new CheckoutOverviewPage();
-    private CheckoutCompletePage checkoutCompletePage = new CheckoutCompletePage();
+    private final LoginPage loginPage = new LoginPage();
+    private final HomePage homePage = new HomePage();
+    private final CartPage cartPage = new CartPage();
+    private final CheckoutInformationPage checkoutInformationPage = new CheckoutInformationPage();
+    private final CheckoutOverviewPage checkoutOverviewPage = new CheckoutOverviewPage();
+    private final CheckoutCompletePage checkoutCompletePage = new CheckoutCompletePage();
 
 
     @Test
-    public void orderProcessTest(){
+    public void completeCheckoutProcessSuccessfullyTest() {
+        //Arrange
+        loginPage.verifyLoginPage();
         loginPage.loginWithValidData();
+        homePage.verifyHomePage();
+
+        //Act
+        homePage.addProductsToCart();
         homePage.goToCart();
-        cartPage.addToCart();
-        checkoutInformationPage.checkoutInformation();
-//        System.out.println(checkoutCompletePage.totalItemSum());
-//        System.out.println(checkoutOverviewPage.productTotalPrice());
-        Assert.assertEquals(checkoutOverviewPage.totalItemSum(), checkoutOverviewPage.productTotalPrice(),"Calculation doesn't match" );
-        Assert.assertEquals(checkoutOverviewPage.totalPriceWithTax(), checkoutOverviewPage.calculateTotalPrice(), "Calculation doesn't match with tax");
+
+        cartPage.verifyCartPage();
+        cartPage.goToCheckoutStepOnePage();
+
+        checkoutInformationPage.verifyCheckoutStepOnePage();
+        checkoutInformationPage.fillOutCheckoutInformationWithValidData();
+        checkoutOverviewPage.verifyCheckoutStepTwoPage();
+
+        //Assert
+        Assert.assertEquals(checkoutOverviewPage.getItemTotalPrice(), checkoutOverviewPage.calculateTotalPriceOfProductsInTheCart(), "Item total price and calculated total price doesn't match!");
+        Assert.assertEquals(checkoutOverviewPage.getTotalPrice(), checkoutOverviewPage.calculateItemTotalPriceWithTax(), "Total price and calculated item total price with tax doesn't match!");
         checkoutOverviewPage.completePurchase();
+        checkoutCompletePage.verifyCompletePage();
     }
 }
