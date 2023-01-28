@@ -8,46 +8,41 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
 public class Driver {
-    private Driver (){ }
+    private Driver() {
+    }
 
     private static WebDriver driver;
 
-    public static WebDriver getDriver(){
+    public static WebDriver getDriver() {
 
-        if(driver == null){
-
+        if (driver == null) {
             String browserType = ConfigurationReader.getProperty("browser");
 
-            switch (browserType){
-                case "chrome":
-                    WebDriverManager.chromedriver().setup();
-                    driver = new ChromeDriver();
-                    break;
-                case "firefox":
+            switch (browserType) {
+                case "firefox" -> {
                     WebDriverManager.firefoxdriver().setup();
                     driver = new FirefoxDriver();
-                    break;
-                case "safari":
+                }
+                case "safari" -> {
                     WebDriverManager.safaridriver().setup();
                     driver = new SafariDriver();
-                    break;
-                case "edge":
+                }
+                case "edge" -> {
                     WebDriverManager.edgedriver().setup();
                     driver = new EdgeDriver();
-                    break;
-               //nese te properties kemi paste emrin e browser gabim na mer default Chrome
-                default:
+                }
+                default -> {
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
-                    break;
+                }
             }
             driver.manage().window().maximize();
         }
         return driver;
     }
 
-    public static void closeDriver(){
-        if(driver!= null){
+    public static void closeDriver() {
+        if (driver != null) {
             driver.close();
             driver = null;
         }

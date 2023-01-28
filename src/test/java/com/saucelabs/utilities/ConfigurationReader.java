@@ -12,13 +12,12 @@ public class ConfigurationReader {
             FileInputStream file = new FileInputStream("configuration.properties");
             properties.load(file);
             file.close();
-        }
-        // if we have errors this is how we handle them
-        catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
-    public static String getProperty (String key){
+
+    public static String getProperty(String key) {
         return properties.getProperty(key);
     }
 }

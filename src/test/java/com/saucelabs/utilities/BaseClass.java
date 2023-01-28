@@ -22,6 +22,7 @@ public abstract class BaseClass {
     public void tearDown(){
         Driver.closeDriver();
     }
+
     @AfterMethod
     public void screenShot(ITestResult result){
         if(ITestResult.FAILURE == result.getStatus()){
@@ -40,6 +41,4 @@ public abstract class BaseClass {
             }
         }
     }
-
-
 }
