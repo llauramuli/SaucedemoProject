@@ -22,12 +22,10 @@ public class CheckoutOverviewTests extends BaseClass {
 
     @Test
     public void completeCheckoutProcessSuccessfullyTest() {
-        //Arrange
         loginPage.verifyLoginPage();
         loginPage.loginWithValidData();
         homePage.verifyHomePage();
 
-        //Act
         homePage.addProductsToCart();
         homePage.goToCart();
 
@@ -38,7 +36,6 @@ public class CheckoutOverviewTests extends BaseClass {
         checkoutInformationPage.fillOutCheckoutInformationWithValidData();
         checkoutOverviewPage.verifyCheckoutStepTwoPage();
 
-        //Assert
         Assert.assertEquals(checkoutOverviewPage.getItemTotalPrice(), checkoutOverviewPage.calculateTotalPriceOfProductsInTheCart(), "Item total price and calculated total price doesn't match!");
         Assert.assertEquals(checkoutOverviewPage.getTotalPrice(), checkoutOverviewPage.calculateItemTotalPriceWithTax(), "Total price and calculated item total price with tax doesn't match!");
         checkoutOverviewPage.completePurchase();

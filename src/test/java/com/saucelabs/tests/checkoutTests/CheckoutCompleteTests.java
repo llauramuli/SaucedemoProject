@@ -22,12 +22,10 @@ public class CheckoutCompleteTests extends BaseClass {
 
     @Test
     public void verifyText(){
-        //Arrange
         loginPage.verifyLoginPage();
         loginPage.loginWithValidData();
         homePage.verifyHomePage();
 
-        //Act
         homePage.addProductsToCart();
         homePage.goToCart();
 
@@ -38,7 +36,6 @@ public class CheckoutCompleteTests extends BaseClass {
         checkoutInformationPage.fillOutCheckoutInformationWithValidData();
         checkoutOverviewPage.verifyCheckoutStepTwoPage();
 
-        //Assert
         checkoutOverviewPage.completePurchase();
         checkoutCompletePage.verifyCompletePage();
         Assert.assertEquals(checkoutCompletePage.getPageText(), "THANK YOU FOR YOUR ORDER");

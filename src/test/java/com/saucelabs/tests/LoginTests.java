@@ -14,13 +14,10 @@ public class LoginTests extends BaseClass {
 
     @Test
     public void loginWithValidDataTest() {
-        //Arrange
         loginPage.verifyLoginPage();
 
-        //Act
         loginPage.loginWithValidData();
 
-        //Assert
         homePage.verifyHomePage();
     }
 

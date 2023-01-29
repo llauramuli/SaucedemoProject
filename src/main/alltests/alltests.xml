@@ -5,8 +5,8 @@
             <class name="com.saucelabs.tests.LoginTests"/>
             <class name="com.saucelabs.tests.HomePageTests"/>
             <class name="com.saucelabs.tests.LogoutTests" />
-            <class name="com.saucelabs.tests.checkoutTests.CheckoutCompleteTests"></class>
-            <class name="com.saucelabs.tests.checkoutTests.CheckoutOverviewTests"></class>
+            <class name="com.saucelabs.tests.checkoutTests.CheckoutOverviewTests"/>
+            <class name="com.saucelabs.tests.checkoutTests.CheckoutCompleteTests"/>
         </classes>
     </test>
 </suite>

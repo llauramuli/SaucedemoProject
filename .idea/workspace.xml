@@ -4,16 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7057bbcf-bdce-4bd2-9456-8b9fff7d15f2" name="Changes" comment="add sc">
+    <list default="true" id="7057bbcf-bdce-4bd2-9456-8b9fff7d15f2" name="Changes" comment="checkout completed">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/assets/failedTestScreenShots/verifyText.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/assets/failedTestScreenShots/userLogoutTest.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/assets/failedTestScreenShots/userLogoutTest.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/checkoutPages/CheckoutCompletePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/checkoutPages/CheckoutCompletePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/checkoutPages/CheckoutInformationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/checkoutPages/CheckoutInformationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/alltests/alltests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/alltests/alltests.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/HomePageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/HomePageTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/LogoutTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/LogoutTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/checkoutTests/CheckoutCompleteTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/checkoutTests/CheckoutCompleteTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/utilities/ConfigurationReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/utilities/ConfigurationReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/checkoutTests/CheckoutOverviewTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/tests/checkoutTests/CheckoutOverviewTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/utilities/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/utilities/BaseClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +33,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2JJbysfvZsMYp8RJutlnEnDOaPx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -59,7 +62,7 @@
       <recent name="$PROJECT_DIR$/src/main/alltests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.HomePageTests">
+  <component name="RunManager" selected="TestNG./Users/macbook/Downloads/SaucedemoProject/src/main/alltests/alltests.xml">
     <configuration name="CheckoutCompleteTests.verifyText" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SaucedemoProject" />
       <extension name="coverage">
@@ -95,7 +98,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTests" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="HomePageTests.sortProductsByPriceUsingHighToLowSortTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SaucedemoProject" />
       <extension name="coverage">
         <pattern>
@@ -104,15 +107,16 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.saucelabs.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.LoginTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.HomePageTests" />
+      <option name="METHOD_NAME" value="sortProductsByPriceUsingHighToLowSortTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTests.loginWithInvalidDataFailedTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="HomePageTests.sortProductsByPriceUsingLowToHighSortTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SaucedemoProject" />
       <extension name="coverage">
         <pattern>
@@ -121,8 +125,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.saucelabs.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.LoginTests" />
-      <option name="METHOD_NAME" value="loginWithInvalidDataFailedTest" />
+      <option name="MAIN_CLASS_NAME" value="com.saucelabs.tests.HomePageTests" />
+      <option name="METHOD_NAME" value="sortProductsByPriceUsingLowToHighSortTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -142,18 +146,18 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.HomePageTests" />
+      <item itemvalue="TestNG.HomePageTests.sortProductsByPriceUsingHighToLowSortTest" />
+      <item itemvalue="TestNG.HomePageTests.sortProductsByPriceUsingLowToHighSortTest" />
       <item itemvalue="TestNG.CheckoutCompleteTests.verifyText" />
-      <item itemvalue="TestNG.LoginTests" />
-      <item itemvalue="TestNG.LoginTests.loginWithInvalidDataFailedTest" />
       <item itemvalue="TestNG./Users/macbook/Downloads/SaucedemoProject/src/main/alltests/alltests.xml" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.HomePageTests" />
         <item itemvalue="TestNG./Users/macbook/Downloads/SaucedemoProject/src/main/alltests/alltests.xml" />
+        <item itemvalue="TestNG.HomePageTests" />
+        <item itemvalue="TestNG.HomePageTests.sortProductsByPriceUsingHighToLowSortTest" />
+        <item itemvalue="TestNG.HomePageTests.sortProductsByPriceUsingLowToHighSortTest" />
         <item itemvalue="TestNG.CheckoutCompleteTests.verifyText" />
-        <item itemvalue="TestNG.LoginTests" />
-        <item itemvalue="TestNG.LoginTests.loginWithInvalidDataFailedTest" />
       </list>
     </recent_temporary>
   </component>
@@ -390,7 +394,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674922555535</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="checkout completed">
+      <created>1674939631930</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1674939631930</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -440,7 +451,6 @@
     <MESSAGE value="Allure installation" />
     <MESSAGE value="Report" />
     <MESSAGE value="Screenshot" />
-    <MESSAGE value="checkout completed" />
     <MESSAGE value="modifications" />
     <MESSAGE value="clean up code" />
     <MESSAGE value="refactor home page code" />
@@ -452,7 +462,8 @@
     <MESSAGE value="trigger add dir" />
     <MESSAGE value="delete dir" />
     <MESSAGE value="add sc" />
-    <option name="LAST_COMMIT_MESSAGE" value="add sc" />
+    <MESSAGE value="checkout completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="checkout completed" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SaucedemoProject$_Users_macbook_Downloads_SaucedemoProject_src_main_testruns_alltests_xml.ic" NAME="$PROJECT_DIR$/src/main/testruns/alltests.xml Coverage Results" MODIFIED="1673980303124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

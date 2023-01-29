@@ -8,7 +8,6 @@ import org.testng.ITestResult;
 import org.testng.annotations.*;
 
 import java.io.File;
-import java.nio.file.Path;
 
 public abstract class BaseClass {
     public WebDriver driver;

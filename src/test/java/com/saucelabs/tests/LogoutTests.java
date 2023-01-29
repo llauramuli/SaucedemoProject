@@ -13,14 +13,11 @@ public class LogoutTests extends BaseClass {
 
     @Test
     public void userLogoutTest() {
-        //Arrange
         loginPage.loginWithValidData();
         homePage.verifyHomePage();
 
-        //Act
         logoutPage.userLogout();
 
-        //Assert
         loginPage.verifyLoginPage();
     }
 }

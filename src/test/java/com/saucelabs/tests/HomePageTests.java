@@ -24,14 +24,11 @@ public class HomePageTests extends BaseClass {
 
     @Test
     public void verifySauceLabsBackpackProductPriceTest() {
-        //Arrange
         loginPage.loginWithValidData();
 
-        //Act
         homePage.getSauceLabsBackpackProductPrice();
         sauceLabsBackpackPage.getDetailsPrice();
 
-        //Assert
         Assert.assertEquals(homePage.productPrice, sauceLabsBackpackPage.productDetailPrice, "Product price and product detail price is not the same!");
         Assert.assertEquals(homePage.productPrice, "$29.99", "Product price is not $29.99!");
         Assert.assertEquals(sauceLabsBackpackPage.productDetailPrice, "$29.99", "Product detail price is not $29.99!");
@@ -52,7 +49,6 @@ public class HomePageTests extends BaseClass {
     @Test
     public void sortProductsByNameUsingZToASortTest() {
         loginPage.loginWithValidData();
-
         WaitUtils.sleep(3); //Added for demo purposes
         homePage.sortProductsByNameUsingZToASort();
 
@@ -74,7 +70,7 @@ public class HomePageTests extends BaseClass {
 
         homePage.sortProductsByPriceUsingLowToHighSort();
 
-        Assert.assertEquals(homePage.sortedProductListByTitle, homePage.sortedOriginalProductListByTitle, "Products are not sorted correctly by 'prices low to high' sort!");
+        Assert.assertEquals(homePage.sortedProductListByPrice, homePage.sortedOriginalProductListByPrice, "Products are not sorted correctly by 'prices low to high' sort!");
     }
 
     @Test
@@ -83,6 +79,6 @@ public class HomePageTests extends BaseClass {
 
         homePage.sortProductsByPriceUsingHighToLowSort();
 
-        Assert.assertEquals(homePage.sortedProductListByTitle, homePage.sortedOriginalProductListByTitle, "Products are not sorted correctly by 'prices high to low' sort!");
+        Assert.assertEquals(homePage.sortedProductListByPrice, homePage.sortedOriginalProductListByPrice, "Products are not sorted correctly by 'prices high to low' sort!");
     }
 }
