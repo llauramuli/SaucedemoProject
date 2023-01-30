@@ -34,7 +34,7 @@ public class Driver {
                 default -> {
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
-                }
+                } //Assert failed
             }
             driver.manage().window().maximize();
         }
@@ -43,7 +43,7 @@ public class Driver {
 
     public static void closeDriver() {
         if (driver != null) {
-            driver.close();
+            driver.quit();
             driver = null;
         }
     }
